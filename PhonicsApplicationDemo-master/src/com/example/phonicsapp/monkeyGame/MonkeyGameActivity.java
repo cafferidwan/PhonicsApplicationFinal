@@ -29,7 +29,7 @@ import android.media.MediaPlayer;
 import android.view.Display;
 
 import com.example.phonicsapp.GameMainPage;
-import com.example.phonicsapp.Menu;
+import com.example.phonicsapp.MenuPage;
 import com.example.phonicsapp.R;
 import com.example.phonicsapp.boxGame.BoxGameActivity;
 
@@ -263,7 +263,7 @@ public class MonkeyGameActivity  extends SimpleBaseGameActivity implements IOnAr
 		
 //		MonkeyGameActivity.monkeyGameLevelSelector = 2;
 		
-		monkeyGameMenuLetterSelector = Menu.letterNumber;
+		monkeyGameMenuLetterSelector = MenuPage.letterNumber;
 		
 		GameObjects.createObjects(monkeyGameMenuLetterSelector);
 		

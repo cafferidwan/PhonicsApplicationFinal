@@ -4,7 +4,7 @@ import org.andengine.opengl.texture.TextureOptions;
 import org.andengine.opengl.texture.atlas.bitmap.BitmapTextureAtlas;
 import org.andengine.opengl.texture.atlas.bitmap.BitmapTextureAtlasTextureRegionFactory;
 
-import com.example.phonicsapp.Menu;
+import com.example.phonicsapp.MenuPage;
 
 public class LoadResources
 {
@@ -14,7 +14,7 @@ public class LoadResources
 		BitmapTextureAtlasTextureRegionFactory.setAssetBasePath("MonkeyGameGfx/");
 		
 		//Mo
-		if(Menu.letterNumber == 1)
+		if(MenuPage.letterNumber == 1)
 		{
 			MonkeyGameActivity.mBitmapTextureAtlasJungleBackGround = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 1600, 868,TextureOptions.BILINEAR_PREMULTIPLYALPHA);
 			MonkeyGameActivity.mJungleBackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasJungleBackGround, MonkeyGameActivity.MonkeyGameActivityActivity.getAssets(), "jungleBackground.png", 0, 0);
@@ -56,7 +56,7 @@ public class LoadResources
 			MonkeyGameActivity.mBitmapTextureAtlasBanana.load();
 		}
 		//Bo
-		else if(Menu.letterNumber == 6)
+		else if(MenuPage.letterNumber == 6)
 		{
 			MonkeyGameActivity.mBitmapTextureAtlasBeachBackGround = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 1600, 868,TextureOptions.BILINEAR_PREMULTIPLYALPHA);
 			MonkeyGameActivity.mBeachBackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasBeachBackGround, MonkeyGameActivity.MonkeyGameActivityActivity.getAssets(), "beachBackground.png", 0, 0);
@@ -99,7 +99,7 @@ public class LoadResources
 			
 		}
 		//Raw
-		else if(Menu.letterNumber == 4)
+		else if(MenuPage.letterNumber == 4)
 		{
 			MonkeyGameActivity.mBitmapTextureAtlasUnderWaterBackGround = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 1600, 868,TextureOptions.BILINEAR_PREMULTIPLYALPHA);
 			MonkeyGameActivity.mUnderWaterBackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasUnderWaterBackGround, MonkeyGameActivity.MonkeyGameActivityActivity.getAssets(), "underWaterBackground.png", 0, 0);
@@ -146,7 +146,7 @@ public class LoadResources
 			
 		}
 		//Toh
-		else if(Menu.letterNumber == 19)
+		else if(MenuPage.letterNumber == 19)
 		{
 			MonkeyGameActivity.mBitmapTextureAtlasPlanetBackGround = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 1600, 868,TextureOptions.BILINEAR_PREMULTIPLYALPHA);
 			MonkeyGameActivity.mPlanetBackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasPlanetBackGround, MonkeyGameActivity.MonkeyGameActivityActivity.getAssets(), "planetBackground.png", 0, 0);
@@ -189,7 +189,7 @@ public class LoadResources
 			MonkeyGameActivity.mBitmapTextureAtlasAlien.load();
 		}
 		//To
-		else if(Menu.letterNumber == 5)
+		else if(MenuPage.letterNumber == 5)
 		{
 			MonkeyGameActivity.mBitmapTextureAtlasPlanetBackGround = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 1600, 868,TextureOptions.BILINEAR_PREMULTIPLYALPHA);
 			MonkeyGameActivity.mPlanetBackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasPlanetBackGround, MonkeyGameActivity.MonkeyGameActivityActivity.getAssets(), "planetBackground.png", 0, 0);

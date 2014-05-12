@@ -9,20 +9,18 @@ import org.andengine.opengl.texture.atlas.buildable.builder.BlackPawnTextureAtla
 import org.andengine.opengl.texture.atlas.buildable.builder.ITextureAtlasBuilder.TextureAtlasBuilderException;
 import org.andengine.util.debug.Debug;
 
-import com.example.phonicsapp.Menu;
+import com.example.phonicsapp.MenuPage;
 
 public class LoadResources 
 {
 
 	public static void loadAllObjects()
 	{
-		BitmapTextureAtlasTextureRegionFactory.setAssetBasePath("BoxGameGfx/");
+		BitmapTextureAtlasTextureRegionFactory.setAssetBasePath("Assets/");
 		
 		//Mo
-		if( Menu.letterNumber == 1)
+		if( MenuPage.letterNumber == 1)
 		{
-			BitmapTextureAtlasTextureRegionFactory.setAssetBasePath("BoxGameGfx/");
-
 			BoxGameActivity.mBitmapTextureAtlasJungleBackGround = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 1600, 864, TextureOptions.BILINEAR);
 			BoxGameActivity.mJungleBackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasJungleBackGround, BoxGameActivity.boxGameActivityInstance,
 					"JungleBG.png", 0, 0,  1, 1);
@@ -43,39 +41,39 @@ public class LoadResources
 			//Letter-Mo
 			BoxGameActivity.mBitmapTextureAtlasMo1 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mMo1TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasMo1, BoxGameActivity.boxGameActivityInstance,
-					"LetterMo/ma.png", 0, 0,  1, 1);
+					"ma.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasMo2 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mMo2TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasMo2, BoxGameActivity.boxGameActivityInstance,
-					"LetterMo/megh.png", 0, 0,  1, 1);
+					"megh.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasMo3 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mMo3TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasMo3, BoxGameActivity.boxGameActivityInstance,
-					"LetterMo/mohis.png", 0, 0,  1, 1);
+					"mohish.png", 0, 0,  1, 1); 
 			
 			BoxGameActivity.mBitmapTextureAtlasMo4 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mMo4TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasMo4, BoxGameActivity.boxGameActivityInstance,
-					"LetterMo/moi.png", 0, 0,  1, 1);
+					"moi.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasMo5 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mMo5TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasMo5, BoxGameActivity.boxGameActivityInstance,
-					"LetterMo/mula.png", 0, 0,  1, 1);
+					"mula.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasMo6 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mMo6TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasMo6, BoxGameActivity.boxGameActivityInstance,
-					"LetterMo/mama.png", 0, 0,  1, 1);
+					"mama.png", 0, 0,  1, 1); 
 			
 			BoxGameActivity.mBitmapTextureAtlasMo = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mMoTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasMo, BoxGameActivity.boxGameActivityInstance,
-					"LetterMo/mo.png", 0, 0,  1, 1);
-			
+					"mo.png", 0, 0,  1, 1);
+			 
 			BoxGameActivity.mBitmapTextureAtlasWMo1 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mWMo1TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasWMo1, BoxGameActivity.boxGameActivityInstance,
-					"LetterMo/kola.png", 0, 0,  1, 1);
+					"tomtom.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasWMo2 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mWMo2TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasWMo2, BoxGameActivity.boxGameActivityInstance,
-					"LetterMo/keramBoard.png", 0, 0,  1, 1);
+					"bol.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasMo1.load();
 			BoxGameActivity.mBitmapTextureAtlasMo2.load();
@@ -90,7 +88,7 @@ public class LoadResources
 			
 			BoxGameActivity.mAnimatedJungleParrotBitmapTextureAtlas = new BuildableBitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 806, 806, TextureOptions.REPEATING_BILINEAR_PREMULTIPLYALPHA);
 			BoxGameActivity.mJungleParrotTextureRegion = BitmapTextureAtlasTextureRegionFactory.
-					createTiledFromAsset(BoxGameActivity.mAnimatedJungleParrotBitmapTextureAtlas, BoxGameActivity.boxGameActivityInstance, "animatedParrot.png", 2, 2);
+					createTiledFromAsset(BoxGameActivity.mAnimatedJungleParrotBitmapTextureAtlas, BoxGameActivity.boxGameActivityInstance, "JungleParrot.png", 2, 2);
 			try 
 			{
 				BoxGameActivity.mAnimatedJungleParrotBitmapTextureAtlas.build(new BlackPawnTextureAtlasBuilder<IBitmapTextureAtlasSource, BitmapTextureAtlas>(0, 0, 0));
@@ -102,10 +100,8 @@ public class LoadResources
 			}
 		}
 		//Bo
-		else if( Menu.letterNumber == 6)
+		else if( MenuPage.letterNumber == 6)
 		{
-			BitmapTextureAtlasTextureRegionFactory.setAssetBasePath("BoxGameGfx/");
-
 			BoxGameActivity.mBitmapTextureAtlasBeachBackGround = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 1600, 864, TextureOptions.BILINEAR);
 			BoxGameActivity.mBeachBackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasBeachBackGround, BoxGameActivity.boxGameActivityInstance,
 					"BeachBG.png", 0, 0,  1, 1);
@@ -125,39 +121,39 @@ public class LoadResources
 			//Letter-Bo
 			BoxGameActivity.mBitmapTextureAtlasBo1 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mBo1TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasBo1, BoxGameActivity.boxGameActivityInstance,
-					"LetterBo/balish.png", 0, 0,  1, 1);
+					"balish.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasBo2 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mBo2TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasBo2, BoxGameActivity.boxGameActivityInstance,
-					"LetterBo/ballon.png", 0, 0,  1, 1);
+					"belun.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasBo3 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mBo3TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasBo3, BoxGameActivity.boxGameActivityInstance,
-					"LetterBo/boi.png", 0, 0,  1, 1);
+					"baba.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasBo4 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mBo4TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasBo4, BoxGameActivity.boxGameActivityInstance,
-					"LetterBo/bok.png", 0, 0,  1, 1);
+					"bok.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasBo5 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mBo5TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasBo5, BoxGameActivity.boxGameActivityInstance,
-					"LetterBo/brinjal.png", 0, 0,  1, 1);
+					"begun.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasBo6 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mBo6TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasBo6, BoxGameActivity.boxGameActivityInstance,
-					"LetterBo/ball.png", 0, 0,  1, 1); 
+					"bol.png", 0, 0,  1, 1); 
 			
 			BoxGameActivity.mBitmapTextureAtlasBo = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mBoTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasBo, BoxGameActivity.boxGameActivityInstance,
-					"LetterBo/bo.png", 0, 0,  1, 1);
+					"bo.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasWBo1 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mWBo1TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasWBo1, BoxGameActivity.boxGameActivityInstance,
-					"LetterBo/robi.png", 0, 0,  1, 1);
+					"robi.png", 0, 0,  1, 1);
 			 
 			BoxGameActivity.mBitmapTextureAtlasWBo2 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mWBo2TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasWBo2, BoxGameActivity.boxGameActivityInstance,
-					"LetterBo/rocket.png", 0, 0,  1, 1);
+					"moi.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasBo1.load();
 			BoxGameActivity.mBitmapTextureAtlasBo2.load();
@@ -171,7 +167,7 @@ public class LoadResources
 			
 			BoxGameActivity.mAnimatedBeachParrotBitmapTextureAtlas = new BuildableBitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 806, 806, TextureOptions.REPEATING_BILINEAR_PREMULTIPLYALPHA);
 			BoxGameActivity.mBeachParrotTextureRegion = BitmapTextureAtlasTextureRegionFactory.
-					createTiledFromAsset(BoxGameActivity.mAnimatedBeachParrotBitmapTextureAtlas, BoxGameActivity.boxGameActivityInstance, "beachParrot.png", 2, 2);
+					createTiledFromAsset(BoxGameActivity.mAnimatedBeachParrotBitmapTextureAtlas, BoxGameActivity.boxGameActivityInstance, "BeachParrot.png", 2, 2);
 			try 
 			{
 				BoxGameActivity.mAnimatedBeachParrotBitmapTextureAtlas.build(new BlackPawnTextureAtlasBuilder<IBitmapTextureAtlasSource, BitmapTextureAtlas>(0, 0, 0));
@@ -185,7 +181,7 @@ public class LoadResources
 			
 		}
 		//Raw
-		else if( Menu.letterNumber == 4)
+		else if( MenuPage.letterNumber == 4)
 		{
 			BoxGameActivity.mBitmapTextureAtlasUnderWaterBackGround = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 1600, 864, TextureOptions.BILINEAR);
 			BoxGameActivity.mUnderWaterBackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasUnderWaterBackGround, BoxGameActivity.boxGameActivityInstance,
@@ -195,10 +191,10 @@ public class LoadResources
 			
 			BoxGameActivity.mUnderWaterBitmapTextureAtlasBoxOpen = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 180, 248, TextureOptions.BILINEAR);
 			BoxGameActivity.mUnderWaterBoxTextureOpenRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mUnderWaterBitmapTextureAtlasBoxOpen, BoxGameActivity.boxGameActivityInstance,
-					"underWaterBoxOpen.png", 0, 0,  1, 1);
+					"UnderWaterBoxOpen.png", 0, 0,  1, 1);
 			BoxGameActivity.mUnderWaterBitmapTextureAtlasBoxClose = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 180, 248, TextureOptions.BILINEAR);
 			BoxGameActivity.mUnderWaterBoxCloseTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mUnderWaterBitmapTextureAtlasBoxClose, BoxGameActivity.boxGameActivityInstance,
-					"underWaterBoxClose.png", 0, 0,  1, 1);
+					"UnderWaterBoxClose.png", 0, 0,  1, 1);
 			BoxGameActivity.mUnderWaterBitmapTextureAtlasBoxOpen.load();
 			BoxGameActivity.mUnderWaterBitmapTextureAtlasBoxClose.load();
 			
@@ -206,39 +202,39 @@ public class LoadResources
 			//Letter-Raw
 			BoxGameActivity.mBitmapTextureAtlasRaw1 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mRaw1TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasRaw1, BoxGameActivity.boxGameActivityInstance,
-					"LetterRaw/rui.png", 0, 0,  1, 1);
+					"rakhal.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasRaw2 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mRaw2TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasRaw2, BoxGameActivity.boxGameActivityInstance,
-					"LetterRaw/rocket.png", 0, 0,  1, 1);
+					"rana.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasRaw3 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mRaw3TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasRaw3, BoxGameActivity.boxGameActivityInstance,
-					"LetterRaw/robi.png", 0, 0,  1, 1);
+					"rani.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasRaw4 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mRaw4TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasRaw4, BoxGameActivity.boxGameActivityInstance,
-					"LetterRaw/rongdhonu.png", 0, 0,  1, 1);
+					"rondhonu.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasRaw5 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mRaw5TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasRaw5, BoxGameActivity.boxGameActivityInstance,
-					"LetterRaw/rani.png", 0, 0,  1, 1);
+					"roket.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasRaw6 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mRaw6TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasRaw6, BoxGameActivity.boxGameActivityInstance,
-					"LetterRaw/ranna.png", 0, 0,  1, 1);
+					"robi.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasRaw = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mRawTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasRaw, BoxGameActivity.boxGameActivityInstance,
-					"LetterRaw/raw.png", 0, 0,  1, 1);
+					"raw.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasWRaw1 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mWRaw1TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasWRaw1, BoxGameActivity.boxGameActivityInstance,
-					"LetterRaw/mohis.png", 0, 0,  1, 1);
+					"mohish.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasWRaw2 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mWRaw2TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasWRaw2, BoxGameActivity.boxGameActivityInstance,
-					"LetterRaw/boi.png", 0, 0,  1, 1);
+					"baba.png", 0, 0,  1, 1);
 			
 			
 			BoxGameActivity.mBitmapTextureAtlasRaw1.load();
@@ -254,7 +250,7 @@ public class LoadResources
 			
 			BoxGameActivity.mAnimatedUnderWaterParrotBitmapTextureAtlas = new BuildableBitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 806, 806, TextureOptions.REPEATING_BILINEAR_PREMULTIPLYALPHA);
 			BoxGameActivity.mUnderWaterParrotTextureRegion = BitmapTextureAtlasTextureRegionFactory.
-					createTiledFromAsset(BoxGameActivity.mAnimatedUnderWaterParrotBitmapTextureAtlas, BoxGameActivity.boxGameActivityInstance, "underWaterParrot.png", 2, 2);
+					createTiledFromAsset(BoxGameActivity.mAnimatedUnderWaterParrotBitmapTextureAtlas, BoxGameActivity.boxGameActivityInstance, "UnderWaterParrot.png", 2, 2);
 			try 
 			{
 				BoxGameActivity.mAnimatedUnderWaterParrotBitmapTextureAtlas.build(new BlackPawnTextureAtlasBuilder<IBitmapTextureAtlasSource, BitmapTextureAtlas>(0, 0, 0));
@@ -266,7 +262,7 @@ public class LoadResources
 			}
 		}
 		//Toh
-		else if( Menu.letterNumber == 19)
+		else if( MenuPage.letterNumber == 19)
 		{
 			BoxGameActivity.mBitmapTextureAtlasPlanetBackGround = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 1600, 864, TextureOptions.BILINEAR);
 			BoxGameActivity.mPlanetBackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasPlanetBackGround, BoxGameActivity.boxGameActivityInstance,
@@ -287,39 +283,39 @@ public class LoadResources
 			//Letter-Toh
 			BoxGameActivity.mBitmapTextureAtlasToh1 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mToh1TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasToh1, BoxGameActivity.boxGameActivityInstance,
-					"LetterToh/table.png", 0, 0,  1, 1);
+					"table.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasToh2 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mToh2TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasToh2, BoxGameActivity.boxGameActivityInstance,
-					"LetterToh/taka.png", 0, 0,  1, 1);
+					"taka.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasToh3 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mToh3TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasToh3, BoxGameActivity.boxGameActivityInstance,
-					"LetterToh/tin.png", 0, 0,  1, 1);
+					"tin.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasToh4 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mToh4TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasToh4, BoxGameActivity.boxGameActivityInstance,
-					"LetterToh/tob.png", 0, 0,  1, 1);
+					"tob.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasToh5 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mToh5TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasToh5, BoxGameActivity.boxGameActivityInstance,
-					"LetterToh/tomato.png", 0, 0,  1, 1);
+					"tomato.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasToh6 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mToh6TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasToh6, BoxGameActivity.boxGameActivityInstance,
-					"LetterToh/tomtom.png", 0, 0,  1, 1);
+					"tomtom.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasToh = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mTohTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasToh, BoxGameActivity.boxGameActivityInstance,
-					"LetterToh/toh.png", 0, 0,  1, 1);
+					"toh.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasWToh1 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mWToh1TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasWToh1, BoxGameActivity.boxGameActivityInstance,
-					"LetterToh/brinjal.png", 0, 0,  1, 1);
+					"begun.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasWToh2 = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			BoxGameActivity.mWToh2TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasWToh2, BoxGameActivity.boxGameActivityInstance,
-					"LetterToh/rongdhonu.png", 0, 0,  1, 1);
+					"rondhonu.png", 0, 0,  1, 1);
 			
 			BoxGameActivity.mBitmapTextureAtlasToh1.load();
 			BoxGameActivity.mBitmapTextureAtlasToh2.load();
@@ -333,7 +329,7 @@ public class LoadResources
 			
 			BoxGameActivity.mAnimatedPlanetParrotBitmapTextureAtlas = new BuildableBitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 806, 806, TextureOptions.REPEATING_BILINEAR_PREMULTIPLYALPHA);
 			BoxGameActivity.mPlanetParrotTextureRegion = BitmapTextureAtlasTextureRegionFactory.
-					createTiledFromAsset(BoxGameActivity.mAnimatedPlanetParrotBitmapTextureAtlas, BoxGameActivity.boxGameActivityInstance, "planetParrot.png", 2, 2);
+					createTiledFromAsset(BoxGameActivity.mAnimatedPlanetParrotBitmapTextureAtlas, BoxGameActivity.boxGameActivityInstance, "PlanetParrot.png", 2, 2);
 			try 
 			{
 				BoxGameActivity.mAnimatedPlanetParrotBitmapTextureAtlas.build(new BlackPawnTextureAtlasBuilder<IBitmapTextureAtlasSource, BitmapTextureAtlas>(0, 0, 0));
@@ -345,7 +341,7 @@ public class LoadResources
 			}
 		}
 		//To
-		else if( Menu.letterNumber == 5)
+		else if( MenuPage.letterNumber == 5)
 		{
 			BoxGameActivity.mBitmapTextureAtlasPlanetBackGround = new BitmapTextureAtlas(BoxGameActivity.boxGameActivityInstance.getTextureManager(), 1600, 864, TextureOptions.BILINEAR);
 			BoxGameActivity.mPlanetBackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(BoxGameActivity.mBitmapTextureAtlasPlanetBackGround, BoxGameActivity.boxGameActivityInstance,

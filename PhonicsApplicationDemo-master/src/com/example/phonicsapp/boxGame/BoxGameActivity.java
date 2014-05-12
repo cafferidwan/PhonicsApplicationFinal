@@ -15,7 +15,7 @@ import org.andengine.opengl.texture.atlas.bitmap.BuildableBitmapTextureAtlas;
 import org.andengine.opengl.texture.region.ITextureRegion;
 import org.andengine.opengl.texture.region.TiledTextureRegion;
 import org.andengine.ui.activity.SimpleBaseGameActivity;
-import com.example.phonicsapp.Menu;
+import com.example.phonicsapp.MenuPage;
 import com.example.phonicsapp.R;
 import com.example.phonicsapp.monkeyGame.MonkeyGameActivity;
 import StatusBarController.StatusBar;
@@ -280,7 +280,7 @@ public class BoxGameActivity extends SimpleBaseGameActivity
 //		StatusBar.showStatusBar();
 		
 		//Getting the menu letter number
-		boxGameMenuLetterSelector = Menu.letterNumber;
+		boxGameMenuLetterSelector = MenuPage.letterNumber;
 		 
 		//Loading the objects according to letter
 		LevelObject.loadObjects(boxGameMenuLetterSelector); 

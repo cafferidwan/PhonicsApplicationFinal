@@ -41,9 +41,8 @@ public class GameMainPage extends SimpleBaseGameActivity
 	public static GameMainPage GameMainPageInstace;
 	
 	public static ITextureRegion mKolomTextureRegion, mBoardTextureRegion, mParrotTextureRegion;
-	public static ITextureRegion mMoTextureRegion;
 	
-	public static ITextureRegion mbackGroundTextureRegion, mbackGround2TextureRegion;
+	public static ITextureRegion mbackGroundTextureRegion;
 	
 	public static BitmapTextureAtlas mBitmapTextureAtlasBackGround, mBitmapTextureAtlasBackGround2,
 									 mBitmapTextureAtlasKolom, mBitmapTextureAtlasBoard,
@@ -51,7 +50,6 @@ public class GameMainPage extends SimpleBaseGameActivity
 	
 	public static Sprite backGround, backGround2;
 	public static Sprite parrot, board, monkey;
-	public static Sprite mo;
 	
 	public static VertexBufferObjectManager vertexBufferObjectManager;
 	
@@ -82,7 +80,7 @@ public class GameMainPage extends SimpleBaseGameActivity
 	protected void onCreateResources() 
 	{
 		// TODO Auto-generated method stub
-		BitmapTextureAtlasTextureRegionFactory.setAssetBasePath("GameMenuGfx/");
+		BitmapTextureAtlasTextureRegionFactory.setAssetBasePath("Assets/");
 
 		mBitmapTextureAtlasBackGround2 = new BitmapTextureAtlas(this.getTextureManager(), 1600, 864, TextureOptions.BILINEAR);
 		mBitmapTextureAtlasBackGround = new BitmapTextureAtlas(this.getTextureManager(), 1600, 868, TextureOptions.BILINEAR);
@@ -91,19 +89,14 @@ public class GameMainPage extends SimpleBaseGameActivity
 		mBitmapTextureAtlasParrot = new BitmapTextureAtlas(this.getTextureManager(), 275, 174, TextureOptions.BILINEAR);
 		mBitmapTextureAtlasLetterMo = new BitmapTextureAtlas(this.getTextureManager(), 100, 100, TextureOptions.BILINEAR);
 		
-		mbackGround2TextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mBitmapTextureAtlasBackGround2, this,
-				"JungleBG.png", 0, 0,  1, 1);
 		mbackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mBitmapTextureAtlasBackGround, this,
-				"bg3.png", 0, 0,  1, 1);
+				"startingPageBG.png", 0, 0,  1, 1);
 		mKolomTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mBitmapTextureAtlasKolom, this,
 				"monkey.png", 0, 0,  1, 1);
 		mBoardTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mBitmapTextureAtlasBoard, this,
 				"board.png", 0, 0,  1, 1);
 		mParrotTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mBitmapTextureAtlasParrot, this,
 				"parrot.png", 0, 0,  1, 1);
-		mMoTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mBitmapTextureAtlasLetterMo, this,
-				"mo.png", 0, 0,  1, 1);
-		
 		
 		mBitmapTextureAtlasBackGround.load();
 		mBitmapTextureAtlasBackGround2.load();
@@ -224,7 +217,7 @@ public class GameMainPage extends SimpleBaseGameActivity
 	{
 		finish();
 //		startActivity(new Intent(this, AnimatedBookActivity.class));
-		startActivity(new Intent(this, Menu.class));
+		startActivity(new Intent(this, MenuPage.class));
 	}
 	
 	void startActivityForMonkey()
