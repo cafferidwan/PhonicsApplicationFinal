@@ -166,7 +166,7 @@ public class LoadResources
 			MonkeyGameActivity.mFaceTextureRegionToh3 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasToh3, MonkeyGameActivity.MonkeyGameActivityActivity, "tin.png",0,0);
 			MonkeyGameActivity.mFaceTextureRegionToh4 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasToh4, MonkeyGameActivity.MonkeyGameActivityActivity, "taka.png",0,0);
 			MonkeyGameActivity.mFaceTextureRegionWToh1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWToh1, MonkeyGameActivity.MonkeyGameActivityActivity, "begun.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionWToh2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWToh2, MonkeyGameActivity.MonkeyGameActivityActivity, "rocket.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionWToh2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWToh2, MonkeyGameActivity.MonkeyGameActivityActivity, "roket.png",0,0);
 						
 			//Letter-Toh
 			MonkeyGameActivity.mBitmapTextureAtlasToh1.load();
