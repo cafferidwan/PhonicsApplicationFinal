@@ -38,12 +38,12 @@ public class MenuPage extends SimpleBaseGameActivity implements IOnSceneTouchLis
 	public static BitmapTextureAtlas[][] mBitmapTextureAtlasMenuLetters = new BitmapTextureAtlas[50][50];
 	public static ITextureRegion[][] mMenuTextureRegionMenuLetters = new ITextureRegion[50][50];
 
-	public static BitmapTextureAtlas mBitmapTextureAtlasMenuLettersLock ;
-	public static ITextureRegion  mMenuTextureRegionMenuLettersLock ;
+//	public static BitmapTextureAtlas mBitmapTextureAtlasMenuLettersLock ;
+//	public static ITextureRegion  mMenuTextureRegionMenuLettersLock ;
 	
 	public static Sprite menuBackground;
 	public static Sprite[][] menuLetters = new Sprite[50][50];
-	public static Sprite[][] menuLettersLock = new Sprite[50][50];
+//	public static Sprite[][] menuLettersLock = new Sprite[50][50];
 	public int i,j;
 	public static int letterNumber;
 	public int menuLetterBlockSize;
@@ -80,12 +80,12 @@ public class MenuPage extends SimpleBaseGameActivity implements IOnSceneTouchLis
 				"JungleBG.png", 0, 0, 1, 1);
 
 
-		mBitmapTextureAtlasMenuLettersLock = new BitmapTextureAtlas(
-				this.getTextureManager(), 400, 400,
-				TextureOptions.BILINEAR);
-		mMenuTextureRegionMenuLettersLock= BitmapTextureAtlasTextureRegionFactory
-				.createTiledFromAsset(
-				mBitmapTextureAtlasMenuLettersLock, this, "lock.png", 0, 0, 1, 1);
+//		mBitmapTextureAtlasMenuLettersLock = new BitmapTextureAtlas(
+//				this.getTextureManager(), 400, 400,
+//				TextureOptions.BILINEAR);
+//		mMenuTextureRegionMenuLettersLock= BitmapTextureAtlasTextureRegionFactory
+//				.createTiledFromAsset(
+//				mBitmapTextureAtlasMenuLettersLock, this, "lock.png", 0, 0, 1, 1);
 		
 		BitmapTextureAtlasTextureRegionFactory
 				.setAssetBasePath("Assets/MenuLetters/");
@@ -116,7 +116,7 @@ public class MenuPage extends SimpleBaseGameActivity implements IOnSceneTouchLis
 		}
 
 		// Menu Lock
-		mBitmapTextureAtlasMenuLettersLock.load();
+//		mBitmapTextureAtlasMenuLettersLock.load();
 
 	}
 
@@ -281,16 +281,16 @@ public class MenuPage extends SimpleBaseGameActivity implements IOnSceneTouchLis
 				menuScene.attachChild(menuLetters[i][j]);
 				
 				
-				for(int k=1; k<=4; k++)
-				{
-					for(int l=1; l<=4; l++) 
-					{
-						menuLettersLock[k][l] = new Sprite(k*130+10, l*100-120, mMenuTextureRegionMenuLettersLock,
-								vertexBufferObjectManager);
-						menuLettersLock[k][l].setScale((float) 0.4);
-						menuScene.attachChild(menuLettersLock[k][l]);
-					}
-				}
+//				for(int k=1; k<=4; k++)
+//				{
+//					for(int l=1; l<=4; l++) 
+//					{
+//						menuLettersLock[k][l] = new Sprite(k*130+10, l*100-120, mMenuTextureRegionMenuLettersLock,
+//								vertexBufferObjectManager);
+//						menuLettersLock[k][l].setScale((float) 0.4);
+//						menuScene.attachChild(menuLettersLock[k][l]);
+//					}
+//				}
 				
 			}
 		}
@@ -316,9 +316,9 @@ public class MenuPage extends SimpleBaseGameActivity implements IOnSceneTouchLis
 //			intent.putExtra("val",letterNumber);
 //			startActivity(intent);
 
-			startActivity(new Intent(getBaseContext(), BoxGameActivity.class));
+//			startActivity(new Intent(getBaseContext(), BoxGameActivity.class));
 			
-//			startActivity(new Intent(getBaseContext(), MonkeyGameActivity.class));
+			startActivity(new Intent(getBaseContext(), MonkeyGameActivity.class));
 			finish();
 		} 
 	}

@@ -11,13 +11,13 @@ public class LoadResources
 
 	public static void loadAllObjects()
 	{ 
-		BitmapTextureAtlasTextureRegionFactory.setAssetBasePath("MonkeyGameGfx/");
+		BitmapTextureAtlasTextureRegionFactory.setAssetBasePath("Assets/");
 		
 		//Mo
 		if(MenuPage.letterNumber == 1)
 		{
 			MonkeyGameActivity.mBitmapTextureAtlasJungleBackGround = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 1600, 868,TextureOptions.BILINEAR_PREMULTIPLYALPHA);
-			MonkeyGameActivity.mJungleBackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasJungleBackGround, MonkeyGameActivity.MonkeyGameActivityActivity.getAssets(), "jungleBackground.png", 0, 0);
+			MonkeyGameActivity.mJungleBackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasJungleBackGround, MonkeyGameActivity.MonkeyGameActivityActivity.getAssets(), "MonkeyGame/jungleBackground.png", 0, 0);
 			MonkeyGameActivity.mBitmapTextureAtlasJungleBackGround.load();
 			
 			//Letter-Mo
@@ -28,12 +28,12 @@ public class LoadResources
 			MonkeyGameActivity.mBitmapTextureAtlasWMo1 = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			MonkeyGameActivity.mBitmapTextureAtlasWMo2 = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			
-			MonkeyGameActivity.mFaceTextureRegionMo1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMo1, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterMo/moi.png", 0, 0);
-			MonkeyGameActivity.mFaceTextureRegionMo2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMo2, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterMo/mama.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionMo3 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMo3, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterMo/megh.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionMo4 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMo4, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterMo/mohis.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionWMo1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWMo1, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterMo/tala.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionWMo2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWMo2, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterMo/langol.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionMo1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMo1, MonkeyGameActivity.MonkeyGameActivityActivity, "ma.png", 0, 0);
+			MonkeyGameActivity.mFaceTextureRegionMo2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMo2, MonkeyGameActivity.MonkeyGameActivityActivity, "mama.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionMo3 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMo3, MonkeyGameActivity.MonkeyGameActivityActivity, "megh.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionMo4 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMo4, MonkeyGameActivity.MonkeyGameActivityActivity, "mohish.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionWMo1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWMo1, MonkeyGameActivity.MonkeyGameActivityActivity, "taka.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionWMo2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWMo2, MonkeyGameActivity.MonkeyGameActivityActivity, "robi.png",0,0);
 		
 			//Letter-Mo
 			MonkeyGameActivity.mBitmapTextureAtlasMo1.load();
@@ -45,21 +45,21 @@ public class LoadResources
 			
 			MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithoutBanana = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 208, 682, TextureOptions.BILINEAR_PREMULTIPLYALPHA );
 			MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithBanana = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 208, 682, TextureOptions.BILINEAR_PREMULTIPLYALPHA );
-			MonkeyGameActivity.mFaceTextureRegionMonkeyWithoutBanana = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithoutBanana, MonkeyGameActivity.MonkeyGameActivityActivity, "monkeyWithoutReward.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionMonkeyWithBanana = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithBanana, MonkeyGameActivity.MonkeyGameActivityActivity, "monkeyWithBanana.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionMonkeyWithoutBanana = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithoutBanana, MonkeyGameActivity.MonkeyGameActivityActivity, "MonkeyGame/monkeyWithoutBanana.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionMonkeyWithBanana = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithBanana, MonkeyGameActivity.MonkeyGameActivityActivity, "MonkeyGame/monkeyWithBanana.png",0,0);
 			MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithoutBanana.load();
 			MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithBanana.load();
 			
 			
 			MonkeyGameActivity.mBitmapTextureAtlasBanana = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
-			MonkeyGameActivity.mFaceTextureRegionBanana = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasBanana, MonkeyGameActivity.MonkeyGameActivityActivity, "banana.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionBanana = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasBanana, MonkeyGameActivity.MonkeyGameActivityActivity, "MonkeyGame/banana.png",0,0);
 			MonkeyGameActivity.mBitmapTextureAtlasBanana.load();
 		}
 		//Bo
 		else if(MenuPage.letterNumber == 6)
 		{
 			MonkeyGameActivity.mBitmapTextureAtlasBeachBackGround = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 1600, 868,TextureOptions.BILINEAR_PREMULTIPLYALPHA);
-			MonkeyGameActivity.mBeachBackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasBeachBackGround, MonkeyGameActivity.MonkeyGameActivityActivity.getAssets(), "beachBackground.png", 0, 0);
+			MonkeyGameActivity.mBeachBackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasBeachBackGround, MonkeyGameActivity.MonkeyGameActivityActivity.getAssets(), "MonkeyGame/beachBackground.png", 0, 0);
 			MonkeyGameActivity.mBitmapTextureAtlasBeachBackGround.load();
 			
 			//Letter-Bo
@@ -70,12 +70,12 @@ public class LoadResources
 			MonkeyGameActivity.mBitmapTextureAtlasWBo1 = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			MonkeyGameActivity.mBitmapTextureAtlasWBo2 = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 							
-			MonkeyGameActivity.mFaceTextureRegionBo1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasBo1, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterBo/balish.png", 0, 0);
-			MonkeyGameActivity.mFaceTextureRegionBo2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasBo2, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterBo/boi.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionBo3 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasBo3, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterBo/ballon.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionBo4 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasBo4, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterBo/brinjal.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionWA1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWBo1, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterBo/taka.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionWA2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWBo2, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterBo/megh.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionBo1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasBo1, MonkeyGameActivity.MonkeyGameActivityActivity, "balish.png", 0, 0);
+			MonkeyGameActivity.mFaceTextureRegionBo2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasBo2, MonkeyGameActivity.MonkeyGameActivityActivity, "baba.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionBo3 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasBo3, MonkeyGameActivity.MonkeyGameActivityActivity, "belun.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionBo4 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasBo4, MonkeyGameActivity.MonkeyGameActivityActivity, "begun.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionWA1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWBo1, MonkeyGameActivity.MonkeyGameActivityActivity, "mohish.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionWA2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWBo2, MonkeyGameActivity.MonkeyGameActivityActivity, "roket.png",0,0);
 		
 		
 			//Letter-Bo
@@ -88,13 +88,13 @@ public class LoadResources
 			
 			MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithFish = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 208, 682, TextureOptions.BILINEAR_PREMULTIPLYALPHA );
 			MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithoutFish = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 208, 682, TextureOptions.BILINEAR_PREMULTIPLYALPHA );
-			MonkeyGameActivity.mFaceTextureRegionMonkeyWithFish = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithFish, MonkeyGameActivity.MonkeyGameActivityActivity, "monkeyWithFish.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionMonkeyWithoutFish = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithoutFish, MonkeyGameActivity.MonkeyGameActivityActivity, "monkeyWithoutFish.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionMonkeyWithFish = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithFish, MonkeyGameActivity.MonkeyGameActivityActivity, "MonkeyGame/monkeyWithFish.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionMonkeyWithoutFish = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithoutFish, MonkeyGameActivity.MonkeyGameActivityActivity, "MonkeyGame/monkeyWithoutFish.png",0,0);
 			MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithFish.load();
 			MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithoutFish.load();
 			
 			MonkeyGameActivity.mBitmapTextureAtlasFish = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
-			MonkeyGameActivity.mFaceTextureRegionFish = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasFish, MonkeyGameActivity.MonkeyGameActivityActivity, "fish.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionFish = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasFish, MonkeyGameActivity.MonkeyGameActivityActivity, "MonkeyGame/fish.png",0,0);
 			MonkeyGameActivity.mBitmapTextureAtlasFish.load();
 			
 		}
@@ -102,11 +102,11 @@ public class LoadResources
 		else if(MenuPage.letterNumber == 4)
 		{
 			MonkeyGameActivity.mBitmapTextureAtlasUnderWaterBackGround = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 1600, 868,TextureOptions.BILINEAR_PREMULTIPLYALPHA);
-			MonkeyGameActivity.mUnderWaterBackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasUnderWaterBackGround, MonkeyGameActivity.MonkeyGameActivityActivity.getAssets(), "underWaterBackground.png", 0, 0);
+			MonkeyGameActivity.mUnderWaterBackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasUnderWaterBackGround, MonkeyGameActivity.MonkeyGameActivityActivity.getAssets(), "MonkeyGame/underWaterBackground.png", 0, 0);
 			MonkeyGameActivity.mBitmapTextureAtlasUnderWaterBackGround.load();
 			
 			MonkeyGameActivity.mBitmapTextureAtlasBoxSide = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 300, 300,TextureOptions.BILINEAR_PREMULTIPLYALPHA);
-			MonkeyGameActivity.mBoxSideTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasBoxSide, MonkeyGameActivity.MonkeyGameActivityActivity.getAssets(), "boxSide.png", 0, 0);
+			MonkeyGameActivity.mBoxSideTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasBoxSide, MonkeyGameActivity.MonkeyGameActivityActivity.getAssets(), "MonkeyGame/boxSide.png", 0, 0);
 			MonkeyGameActivity.mBitmapTextureAtlasBoxSide.load();
 			
 			
@@ -118,12 +118,12 @@ public class LoadResources
 			MonkeyGameActivity.mBitmapTextureAtlasWRaw1 = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			MonkeyGameActivity.mBitmapTextureAtlasWRaw2 = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 					
-			MonkeyGameActivity.mFaceTextureRegionRaw1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasRaw1, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterRaw/robi.png", 0, 0);
-			MonkeyGameActivity.mFaceTextureRegionRaw2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasRaw2, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterRaw/rocket.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionRaw3 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasRaw3, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterRaw/rani.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionRaw4 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasRaw4, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterRaw/rui.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionWRaw1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWRaw1, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterRaw/mama.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionWRaw2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWRaw2, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterRaw/table.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionRaw1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasRaw1, MonkeyGameActivity.MonkeyGameActivityActivity, "robi.png", 0, 0);
+			MonkeyGameActivity.mFaceTextureRegionRaw2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasRaw2, MonkeyGameActivity.MonkeyGameActivityActivity, "roket.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionRaw3 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasRaw3, MonkeyGameActivity.MonkeyGameActivityActivity, "rani.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionRaw4 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasRaw4, MonkeyGameActivity.MonkeyGameActivityActivity, "rana.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionWRaw1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWRaw1, MonkeyGameActivity.MonkeyGameActivityActivity, "mama.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionWRaw2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWRaw2, MonkeyGameActivity.MonkeyGameActivityActivity, "belun.png",0,0);
 			
 			//Letter-Raw 
 			MonkeyGameActivity.mBitmapTextureAtlasRaw1.load();
@@ -135,13 +135,13 @@ public class LoadResources
 			
 			MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithCup = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 208, 682, TextureOptions.BILINEAR_PREMULTIPLYALPHA );
 			MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithoutCup = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 208, 682, TextureOptions.BILINEAR_PREMULTIPLYALPHA );
-			MonkeyGameActivity.mFaceTextureRegionMonkeyWithCup = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithCup, MonkeyGameActivity.MonkeyGameActivityActivity, "monkeyWithCup.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionMonkeyWithoutCup = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithoutCup, MonkeyGameActivity.MonkeyGameActivityActivity, "monkeyWithoutCup.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionMonkeyWithCup = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithCup, MonkeyGameActivity.MonkeyGameActivityActivity, "MonkeyGame/monkeyWithCup.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionMonkeyWithoutCup = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithoutCup, MonkeyGameActivity.MonkeyGameActivityActivity, "MonkeyGame/monkeyWithoutCup.png",0,0);
 			MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithCup.load();
 			MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithoutCup.load();
 			
 			MonkeyGameActivity.mBitmapTextureAtlasCup = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
-			MonkeyGameActivity.mFaceTextureRegionCup = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasCup, MonkeyGameActivity.MonkeyGameActivityActivity, "cup.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionCup = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasCup, MonkeyGameActivity.MonkeyGameActivityActivity, "MonkeyGame/cup.png",0,0);
 			MonkeyGameActivity.mBitmapTextureAtlasCup.load();
 			
 		}
@@ -149,7 +149,7 @@ public class LoadResources
 		else if(MenuPage.letterNumber == 19)
 		{
 			MonkeyGameActivity.mBitmapTextureAtlasPlanetBackGround = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 1600, 868,TextureOptions.BILINEAR_PREMULTIPLYALPHA);
-			MonkeyGameActivity.mPlanetBackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasPlanetBackGround, MonkeyGameActivity.MonkeyGameActivityActivity.getAssets(), "planetBackground.png", 0, 0);
+			MonkeyGameActivity.mPlanetBackGroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasPlanetBackGround, MonkeyGameActivity.MonkeyGameActivityActivity.getAssets(), "MonkeyGame/planetBackground.png", 0, 0);
 			MonkeyGameActivity.mBitmapTextureAtlasPlanetBackGround.load();
 			
 			
@@ -161,12 +161,12 @@ public class LoadResources
 			MonkeyGameActivity.mBitmapTextureAtlasWToh1 = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 			MonkeyGameActivity.mBitmapTextureAtlasWToh2 = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
 							
-			MonkeyGameActivity.mFaceTextureRegionToh1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasToh1, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterToh/tomtom.png", 0, 0);
-			MonkeyGameActivity.mFaceTextureRegionToh2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasToh2, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterToh/tomato.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionToh3 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasToh3, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterToh/tin.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionToh4 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasToh4, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterToh/taka.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionWToh1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWToh1, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterToh/boi.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionWToh2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWToh2, MonkeyGameActivity.MonkeyGameActivityActivity, "LetterToh/rocket.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionToh1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasToh1, MonkeyGameActivity.MonkeyGameActivityActivity, "tomtom.png", 0, 0);
+			MonkeyGameActivity.mFaceTextureRegionToh2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasToh2, MonkeyGameActivity.MonkeyGameActivityActivity, "tomato.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionToh3 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasToh3, MonkeyGameActivity.MonkeyGameActivityActivity, "tin.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionToh4 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasToh4, MonkeyGameActivity.MonkeyGameActivityActivity, "taka.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionWToh1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWToh1, MonkeyGameActivity.MonkeyGameActivityActivity, "begun.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionWToh2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWToh2, MonkeyGameActivity.MonkeyGameActivityActivity, "rocket.png",0,0);
 						
 			//Letter-Toh
 			MonkeyGameActivity.mBitmapTextureAtlasToh1.load();
@@ -178,14 +178,14 @@ public class LoadResources
 			
 			MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithAlien = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 208, 682, TextureOptions.BILINEAR_PREMULTIPLYALPHA );
 			MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithoutAlien = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 208, 682, TextureOptions.BILINEAR_PREMULTIPLYALPHA );
-			MonkeyGameActivity.mFaceTextureRegionMonkeyWithAlien = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithAlien, MonkeyGameActivity.MonkeyGameActivityActivity, "monkeyWithAlien.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionMonkeyWithoutAlien = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithoutAlien, MonkeyGameActivity.MonkeyGameActivityActivity, "monkeyWithoutAlien.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionMonkeyWithAlien = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithAlien, MonkeyGameActivity.MonkeyGameActivityActivity, "MonkeyGame/monkeyWithAlien.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionMonkeyWithoutAlien = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithoutAlien, MonkeyGameActivity.MonkeyGameActivityActivity, "MonkeyGame/monkeyWithoutAlien.png",0,0);
 			MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithAlien.load();
 			MonkeyGameActivity.mBitmapTextureAtlasMonkeyWithoutAlien.load();
 			
 			
 			MonkeyGameActivity.mBitmapTextureAtlasAlien = new BitmapTextureAtlas(MonkeyGameActivity.MonkeyGameActivityActivity.getTextureManager(), 200, 200, TextureOptions.BILINEAR);
-			MonkeyGameActivity.mFaceTextureRegionAlien = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasAlien, MonkeyGameActivity.MonkeyGameActivityActivity, "alien.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionAlien = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasAlien, MonkeyGameActivity.MonkeyGameActivityActivity, "MonkeyGame/alien.png",0,0);
 			MonkeyGameActivity.mBitmapTextureAtlasAlien.load();
 		}
 		//To
