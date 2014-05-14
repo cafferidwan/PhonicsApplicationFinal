@@ -45,13 +45,73 @@ public class Parrot extends AnimatedSprite
 				{
 					Functions.playAudio(R.raw.box_mo);
 				}
+				else if(BoxGameActivity.boxGameMenuLetterSelector==2)
+				{
+					Functions.playAudio(R.raw.box_mo);
+				}
+				else if(BoxGameActivity.boxGameMenuLetterSelector==3)
+				{
+					Functions.playAudio(R.raw.box_mo);
+				}
+				else if(BoxGameActivity.boxGameMenuLetterSelector==4)
+				{
+					Functions.playAudio(R.raw.box_mo);
+				}
+				else if(BoxGameActivity.boxGameMenuLetterSelector==5)
+				{
+					Functions.playAudio(R.raw.box_mo);
+				}
 				else if(BoxGameActivity.boxGameMenuLetterSelector==6)
 				{
 					Functions.playAudio(R.raw.box_bo);
 				}
-				else if(BoxGameActivity.boxGameMenuLetterSelector==4)
+				else if(BoxGameActivity.boxGameMenuLetterSelector==7)
 				{
-					Functions.playAudio(R.raw.box_ro);
+					Functions.playAudio(R.raw.box_mo);
+				}
+				else if(BoxGameActivity.boxGameMenuLetterSelector==8)
+				{
+					Functions.playAudio(R.raw.box_mo);
+				}
+				else if(BoxGameActivity.boxGameMenuLetterSelector==9)
+				{
+					Functions.playAudio(R.raw.box_mo);
+				}
+				else if(BoxGameActivity.boxGameMenuLetterSelector==10)
+				{
+					Functions.playAudio(R.raw.box_mo);
+				}
+				else if(BoxGameActivity.boxGameMenuLetterSelector==11)
+				{
+					Functions.playAudio(R.raw.box_mo);
+				}
+				else if(BoxGameActivity.boxGameMenuLetterSelector==12)
+				{
+					Functions.playAudio(R.raw.box_mo);
+				}
+				else if(BoxGameActivity.boxGameMenuLetterSelector==13)
+				{
+					Functions.playAudio(R.raw.box_mo);
+				}
+				else if(BoxGameActivity.boxGameMenuLetterSelector==14)
+				{
+					Functions.playAudio(R.raw.box_mo);
+				}
+				else if(BoxGameActivity.boxGameMenuLetterSelector==15)
+				{
+					Functions.playAudio(R.raw.box_mo);
+				}
+				else if(BoxGameActivity.boxGameMenuLetterSelector==16)
+				{
+					Functions.playAudio(R.raw.box_mo);
+				}
+				else if(BoxGameActivity.boxGameMenuLetterSelector==17)
+				{
+					Functions.playAudio(R.raw.box_mo);
+				}
+				else if(BoxGameActivity.boxGameMenuLetterSelector==18)
+				{
+					Functions.playAudio(R.raw.box_mo);
 				}
 				else if(BoxGameActivity.boxGameMenuLetterSelector==19)
 				{
@@ -109,25 +169,33 @@ public class Parrot extends AnimatedSprite
 	
 	static void parrotPath() 
 	{
-		if(BoxGameActivity.boxGameMenuLetterSelector == 1)
+		if(BoxGameActivity.boxGameMenuLetterSelector == 1||BoxGameActivity.boxGameMenuLetterSelector == 2||
+		   BoxGameActivity.boxGameMenuLetterSelector == 5||BoxGameActivity.boxGameMenuLetterSelector == 8||
+		   BoxGameActivity.boxGameMenuLetterSelector == 18)
 		{
 			pathModifier(new Path(2).to(BoxGameActivity.CAMERA_WIDTH, BoxGameActivity.CAMERA_HEIGHT / 2 - 340)
 					.to(BoxGameActivity.CAMERA_WIDTH - 350,BoxGameActivity.CAMERA_HEIGHT / 2 - 340), 
 					BoxGameActivity.parrotLetter, 4);
 		}
-		else if(BoxGameActivity.boxGameMenuLetterSelector == 6)
+		else if(BoxGameActivity.boxGameMenuLetterSelector == 6||BoxGameActivity.boxGameMenuLetterSelector == 14||
+				   BoxGameActivity.boxGameMenuLetterSelector == 13||BoxGameActivity.boxGameMenuLetterSelector == 3||
+				   BoxGameActivity.boxGameMenuLetterSelector == 19)
 		{
 			pathModifier(new Path(2).to(BoxGameActivity.CAMERA_WIDTH, BoxGameActivity.CAMERA_HEIGHT / 2 - 340)
 					.to(BoxGameActivity.CAMERA_WIDTH - 350,BoxGameActivity.CAMERA_HEIGHT / 2 - 340), 
 					BoxGameActivity.parrotLetter, 4);
 		}
-		else if(BoxGameActivity.boxGameMenuLetterSelector == 4)
+		else if(BoxGameActivity.boxGameMenuLetterSelector == 4||BoxGameActivity.boxGameMenuLetterSelector == 7||
+				   BoxGameActivity.boxGameMenuLetterSelector == 16||BoxGameActivity.boxGameMenuLetterSelector == 15||
+				   BoxGameActivity.boxGameMenuLetterSelector == 20)
 		{
 			pathModifier(new Path(2).to(BoxGameActivity.CAMERA_WIDTH, BoxGameActivity.CAMERA_HEIGHT / 2 - 340)
 					.to(BoxGameActivity.CAMERA_WIDTH - 350,BoxGameActivity.CAMERA_HEIGHT / 2 - 340), 
 					BoxGameActivity.parrotLetter, 4);
 		}
-		else if(BoxGameActivity.boxGameMenuLetterSelector == 19)
+		else if(BoxGameActivity.boxGameMenuLetterSelector == 19||BoxGameActivity.boxGameMenuLetterSelector == 12||
+				   BoxGameActivity.boxGameMenuLetterSelector == 17||BoxGameActivity.boxGameMenuLetterSelector == 10||
+				   BoxGameActivity.boxGameMenuLetterSelector == 11)
 		{
 			pathModifier(new Path(2).to(BoxGameActivity.CAMERA_WIDTH, BoxGameActivity.CAMERA_HEIGHT / 2 - 340)
 					.to(BoxGameActivity.CAMERA_WIDTH - 350,BoxGameActivity.CAMERA_HEIGHT / 2 - 340), 

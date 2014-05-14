@@ -14,6 +14,7 @@ import org.andengine.opengl.texture.atlas.bitmap.BitmapTextureAtlasTextureRegion
 import org.andengine.opengl.texture.region.ITextureRegion;
 import org.andengine.opengl.vbo.VertexBufferObjectManager;
 import org.andengine.ui.activity.SimpleBaseGameActivity;
+import org.andengine.util.debug.Debug;
 
 import android.content.Intent;
 import android.view.Display;
@@ -309,18 +310,20 @@ public class MenuPage extends SimpleBaseGameActivity implements IOnSceneTouchLis
 	{
 		letterNumber = number;
 		
-		if(letterNumber == 1 ||letterNumber == 6|| letterNumber == 4 || letterNumber == 19 )
-		{ 
+//		Debug.d("Letter Numbernnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn:"+letterNumber);
+		
+//		if(letterNumber == 1 ||letterNumber == 6|| letterNumber == 4 || letterNumber == 19 )
+//		{ 
 			menuLetters[row][column].setScale((float) 0.55);
 //			Intent intent = new Intent(getBaseContext(), AnimatedBookActivity.class);
 //			intent.putExtra("val",letterNumber);
 //			startActivity(intent);
 
-//			startActivity(new Intent(getBaseContext(), BoxGameActivity.class));
+			startActivity(new Intent(getBaseContext(), BoxGameActivity.class));
 			
-			startActivity(new Intent(getBaseContext(), MonkeyGameActivity.class));
+//			startActivity(new Intent(getBaseContext(), MonkeyGameActivity.class));
 			finish();
-		} 
+//		} 
 	}
 	
 	@Override

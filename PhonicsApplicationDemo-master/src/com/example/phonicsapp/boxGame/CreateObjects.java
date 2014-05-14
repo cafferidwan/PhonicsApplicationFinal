@@ -12,8 +12,9 @@ public class CreateObjects
 	public static void create(int boxGameMenuLetter)
 	{
 		Debug.d("BoxMenuLEtter:"+boxGameMenuLetter);
-		//Mo
-		if(boxGameMenuLetter==1)
+		
+		if(boxGameMenuLetter==1||boxGameMenuLetter==2||boxGameMenuLetter==5||boxGameMenuLetter==8||
+				boxGameMenuLetter==18)
 		{
 			BoxGameActivity.backGround = new Sprite(0, 0, BoxGameActivity.mJungleBackGroundTextureRegion,
 					BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
@@ -23,11 +24,9 @@ public class CreateObjects
 			
 			BoxGameActivity.closedBox = new Sprite(BoxGameActivity.CAMERA_WIDTH/2-100, BoxGameActivity.CAMERA_HEIGHT/2, 
 					BoxGameActivity.mJungleBoxCloseTextureRegion,  BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
-
-			
 		}
-		//Bo
-		else if(boxGameMenuLetter==6)
+		else if(boxGameMenuLetter==6||boxGameMenuLetter==14||boxGameMenuLetter==13||boxGameMenuLetter==3||
+				boxGameMenuLetter==9)
 		{
 			BoxGameActivity.backGround = new Sprite(0, 0, BoxGameActivity.mBeachBackGroundTextureRegion,
 					BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
@@ -39,8 +38,8 @@ public class CreateObjects
 					BoxGameActivity.mBeachBoxCloseTextureRegion,  BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
 			
 		}
-		//Raw
-		else if(boxGameMenuLetter==4)
+		else if(boxGameMenuLetter==4||boxGameMenuLetter==7||boxGameMenuLetter==16||boxGameMenuLetter==15||
+				boxGameMenuLetter==20)
 		{
 			BoxGameActivity.backGround = new Sprite(0, 0, BoxGameActivity.mUnderWaterBackGroundTextureRegion,
 					BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
@@ -53,8 +52,8 @@ public class CreateObjects
 			
 			
 		}
-		//Toh
-		else if(boxGameMenuLetter==19)
+		else if(boxGameMenuLetter==19||boxGameMenuLetter==12||boxGameMenuLetter==17||boxGameMenuLetter==10||
+				boxGameMenuLetter==11)
 		{
 			BoxGameActivity.backGround = new Sprite(0, 0, BoxGameActivity.mPlanetBackGroundTextureRegion,
 					BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
@@ -118,26 +117,30 @@ public class CreateObjects
 		BoxGameActivity.mScene.registerTouchArea(BoxGameActivity.letter);
 		BoxGameActivity.parrotLetter.attachChild(BoxGameActivity.letter);
 		
-		if(boxGameMenuLetter == 1)
+		if(boxGameMenuLetter==1||boxGameMenuLetter==2||boxGameMenuLetter==5||boxGameMenuLetter==8||
+				boxGameMenuLetter==18)
 		{
 		
 			BoxGameActivity.parrot = new Parrot(0,0, 
 					BoxGameActivity.mJungleParrotTextureRegion, BoxGameActivity.boxGameActivityInstance.
 					getVertexBufferObjectManager());
 		}
-		else if(boxGameMenuLetter == 6)
+		else if(boxGameMenuLetter==6||boxGameMenuLetter==14||boxGameMenuLetter==13||boxGameMenuLetter==3||
+				boxGameMenuLetter==9)
 		{
 			BoxGameActivity.parrot = new Parrot(0,0, 
 					BoxGameActivity.mBeachParrotTextureRegion, BoxGameActivity.boxGameActivityInstance.
 					getVertexBufferObjectManager());
 		}
-		else if(boxGameMenuLetter == 4)
+		else if(boxGameMenuLetter==4||boxGameMenuLetter==7||boxGameMenuLetter==16||boxGameMenuLetter==15||
+				boxGameMenuLetter==20)
 		{
 			BoxGameActivity.parrot = new Parrot(0,0, 
 					BoxGameActivity.mUnderWaterParrotTextureRegion, BoxGameActivity.boxGameActivityInstance.
 					getVertexBufferObjectManager());
 		}
-		else if(boxGameMenuLetter == 19)
+		else if(boxGameMenuLetter==19||boxGameMenuLetter==12||boxGameMenuLetter==17||boxGameMenuLetter==10||
+				boxGameMenuLetter==11)
 		{
 			BoxGameActivity.parrot = new Parrot(0,0, 
 					BoxGameActivity.mPlanetParrotTextureRegion, BoxGameActivity.boxGameActivityInstance.

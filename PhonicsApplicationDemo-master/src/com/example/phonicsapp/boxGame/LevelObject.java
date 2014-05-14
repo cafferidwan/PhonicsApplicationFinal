@@ -33,6 +33,101 @@ public class LevelObject
 			BoxGameActivity.wrongObj2Sound = R.raw.keram;
 			BoxGameActivity.letterSound = R.raw.mo;
 		}
+		//Letter-Aa
+		else if(i == 2)
+		{
+			BoxGameActivity.letter = new Letter(BoxGameActivity.letterX, BoxGameActivity.letterY, 80, 80, BoxGameActivity.mAaTextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			
+			BoxGameActivity.obj1 = new Objects(BoxGameActivity.obj1X, BoxGameActivity.obj1Y, BoxGameActivity.mAa1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj2 = new Objects(BoxGameActivity.obj2X, BoxGameActivity.obj2Y, BoxGameActivity.mAa2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj3 = new Objects(BoxGameActivity.obj3X, BoxGameActivity.obj3Y, BoxGameActivity.mAa3TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj4 = new Objects(BoxGameActivity.obj4X, BoxGameActivity.obj4Y, BoxGameActivity.mAa4TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj5 = new Objects(BoxGameActivity.obj5X, BoxGameActivity.obj5Y, BoxGameActivity.mAa5TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj6 = new Objects(BoxGameActivity.obj6X, BoxGameActivity.obj6Y, BoxGameActivity.mAa6TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj1 = new Objects(BoxGameActivity.wrongObj1X, BoxGameActivity.wrongObj1Y, BoxGameActivity.mWAa1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj2 = new Objects(BoxGameActivity.wrongObj2X, BoxGameActivity.wrongObj2Y, BoxGameActivity.mWAa2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1Sound = R.raw.ma;
+			BoxGameActivity.obj2Sound = R.raw.megh;
+			BoxGameActivity.obj3Sound = R.raw.mohis;
+			BoxGameActivity.obj4Sound = R.raw.moi;
+			BoxGameActivity.obj5Sound = R.raw.mula;
+			BoxGameActivity.obj6Sound = R.raw.mama;
+			BoxGameActivity.wrongObj1Sound = R.raw.kola;
+			BoxGameActivity.wrongObj2Sound = R.raw.keram;
+			BoxGameActivity.letterSound = R.raw.mo;
+		}
+		//Letter-E
+		else if(i == 3)
+		{
+			BoxGameActivity.letter = new Letter(BoxGameActivity.letterX, BoxGameActivity.letterY, 80, 80, BoxGameActivity.mETextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			
+			BoxGameActivity.obj1 = new Objects(BoxGameActivity.obj1X, BoxGameActivity.obj1Y, BoxGameActivity.mE1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj2 = new Objects(BoxGameActivity.obj2X, BoxGameActivity.obj2Y, BoxGameActivity.mE2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj3 = new Objects(BoxGameActivity.obj3X, BoxGameActivity.obj3Y, BoxGameActivity.mE3TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj4 = new Objects(BoxGameActivity.obj4X, BoxGameActivity.obj4Y, BoxGameActivity.mE4TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj5 = new Objects(BoxGameActivity.obj5X, BoxGameActivity.obj5Y, BoxGameActivity.mE5TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj6 = new Objects(BoxGameActivity.obj6X, BoxGameActivity.obj6Y, BoxGameActivity.mE6TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj1 = new Objects(BoxGameActivity.wrongObj1X, BoxGameActivity.wrongObj1Y, BoxGameActivity.mWE1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj2 = new Objects(BoxGameActivity.wrongObj2X, BoxGameActivity.wrongObj2Y, BoxGameActivity.mWE2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1Sound = R.raw.ma;
+			BoxGameActivity.obj2Sound = R.raw.megh;
+			BoxGameActivity.obj3Sound = R.raw.mohis;
+			BoxGameActivity.obj4Sound = R.raw.moi;
+			BoxGameActivity.obj5Sound = R.raw.mula;
+			BoxGameActivity.obj6Sound = R.raw.mama;
+			BoxGameActivity.wrongObj1Sound = R.raw.kola;
+			BoxGameActivity.wrongObj2Sound = R.raw.keram;
+			BoxGameActivity.letterSound = R.raw.mo;
+		}
+		//Letter-Raw
+		else if(i == 4)
+		{
+			BoxGameActivity.letter = new Letter(BoxGameActivity.letterX, BoxGameActivity.letterY, 80, 80, BoxGameActivity.mRawTextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1 = new Objects(BoxGameActivity.obj1X, BoxGameActivity.obj1Y, BoxGameActivity.mRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj2 = new Objects(BoxGameActivity.obj2X, BoxGameActivity.obj2Y, BoxGameActivity.mRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj3 = new Objects(BoxGameActivity.obj3X, BoxGameActivity.obj3Y, BoxGameActivity.mRaw3TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj4 = new Objects(BoxGameActivity.obj4X, BoxGameActivity.obj4Y, BoxGameActivity.mRaw4TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj5 = new Objects(BoxGameActivity.obj5X, BoxGameActivity.obj5Y, BoxGameActivity.mRaw5TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj6 = new Objects(BoxGameActivity.obj6X, BoxGameActivity.obj6Y, BoxGameActivity.mRaw6TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj1 = new Objects(BoxGameActivity.wrongObj1X, BoxGameActivity.wrongObj1Y, BoxGameActivity.mWRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj2 = new Objects(BoxGameActivity.wrongObj2X, BoxGameActivity.wrongObj2Y, BoxGameActivity.mWRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1Sound = R.raw.ruimach;
+			BoxGameActivity.obj2Sound = R.raw.rocket;
+			BoxGameActivity.obj3Sound = R.raw.robi;
+			BoxGameActivity.obj4Sound = R.raw.rongdhonu;
+			BoxGameActivity.obj5Sound = R.raw.rani;
+			BoxGameActivity.obj6Sound = R.raw.rana;
+			BoxGameActivity.wrongObj1Sound = R.raw.mohis;
+			BoxGameActivity.wrongObj2Sound = R.raw.boi;
+			BoxGameActivity.letterSound = R.raw.raw;
+		}
+		else if(i == 5)
+		{
+			BoxGameActivity.letter = new Letter(BoxGameActivity.letterX, BoxGameActivity.letterY, 80, 80, BoxGameActivity.mRawTextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1 = new Objects(BoxGameActivity.obj1X, BoxGameActivity.obj1Y, BoxGameActivity.mRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj2 = new Objects(BoxGameActivity.obj2X, BoxGameActivity.obj2Y, BoxGameActivity.mRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj3 = new Objects(BoxGameActivity.obj3X, BoxGameActivity.obj3Y, BoxGameActivity.mRaw3TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj4 = new Objects(BoxGameActivity.obj4X, BoxGameActivity.obj4Y, BoxGameActivity.mRaw4TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj5 = new Objects(BoxGameActivity.obj5X, BoxGameActivity.obj5Y, BoxGameActivity.mRaw5TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj6 = new Objects(BoxGameActivity.obj6X, BoxGameActivity.obj6Y, BoxGameActivity.mRaw6TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj1 = new Objects(BoxGameActivity.wrongObj1X, BoxGameActivity.wrongObj1Y, BoxGameActivity.mWRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj2 = new Objects(BoxGameActivity.wrongObj2X, BoxGameActivity.wrongObj2Y, BoxGameActivity.mWRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1Sound = R.raw.ruimach;
+			BoxGameActivity.obj2Sound = R.raw.rocket;
+			BoxGameActivity.obj3Sound = R.raw.robi;
+			BoxGameActivity.obj4Sound = R.raw.rongdhonu;
+			BoxGameActivity.obj5Sound = R.raw.rani;
+			BoxGameActivity.obj6Sound = R.raw.rana;
+			BoxGameActivity.wrongObj1Sound = R.raw.mohis;
+			BoxGameActivity.wrongObj2Sound = R.raw.boi;
+			BoxGameActivity.letterSound = R.raw.raw;
+		}
 		//Letter-Bo
 		else if(i == 6)
 		{
@@ -57,11 +152,10 @@ public class LevelObject
 			BoxGameActivity.wrongObj2Sound = R.raw.rocket; 
 			BoxGameActivity.letterSound = R.raw.bo;
 		}
-		//Letter-Raw
-		else if(i == 4)
+		else if(i == 7)
 		{
 			BoxGameActivity.letter = new Letter(BoxGameActivity.letterX, BoxGameActivity.letterY, 80, 80, BoxGameActivity.mRawTextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
-			
+					
 			BoxGameActivity.obj1 = new Objects(BoxGameActivity.obj1X, BoxGameActivity.obj1Y, BoxGameActivity.mRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
 			BoxGameActivity.obj2 = new Objects(BoxGameActivity.obj2X, BoxGameActivity.obj2Y, BoxGameActivity.mRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
 			BoxGameActivity.obj3 = new Objects(BoxGameActivity.obj3X, BoxGameActivity.obj3Y, BoxGameActivity.mRaw3TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
@@ -70,7 +164,261 @@ public class LevelObject
 			BoxGameActivity.obj6 = new Objects(BoxGameActivity.obj6X, BoxGameActivity.obj6Y, BoxGameActivity.mRaw6TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
 			BoxGameActivity.wrongObj1 = new Objects(BoxGameActivity.wrongObj1X, BoxGameActivity.wrongObj1Y, BoxGameActivity.mWRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
 			BoxGameActivity.wrongObj2 = new Objects(BoxGameActivity.wrongObj2X, BoxGameActivity.wrongObj2Y, BoxGameActivity.mWRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
-			
+					
+			BoxGameActivity.obj1Sound = R.raw.ruimach;
+			BoxGameActivity.obj2Sound = R.raw.rocket;
+			BoxGameActivity.obj3Sound = R.raw.robi;
+			BoxGameActivity.obj4Sound = R.raw.rongdhonu;
+			BoxGameActivity.obj5Sound = R.raw.rani;
+			BoxGameActivity.obj6Sound = R.raw.rana;
+			BoxGameActivity.wrongObj1Sound = R.raw.mohis;
+			BoxGameActivity.wrongObj2Sound = R.raw.boi;
+			BoxGameActivity.letterSound = R.raw.raw;
+		}
+		else if(i == 8)
+		{
+			BoxGameActivity.letter = new Letter(BoxGameActivity.letterX, BoxGameActivity.letterY, 80, 80, BoxGameActivity.mRawTextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1 = new Objects(BoxGameActivity.obj1X, BoxGameActivity.obj1Y, BoxGameActivity.mRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj2 = new Objects(BoxGameActivity.obj2X, BoxGameActivity.obj2Y, BoxGameActivity.mRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj3 = new Objects(BoxGameActivity.obj3X, BoxGameActivity.obj3Y, BoxGameActivity.mRaw3TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj4 = new Objects(BoxGameActivity.obj4X, BoxGameActivity.obj4Y, BoxGameActivity.mRaw4TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj5 = new Objects(BoxGameActivity.obj5X, BoxGameActivity.obj5Y, BoxGameActivity.mRaw5TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj6 = new Objects(BoxGameActivity.obj6X, BoxGameActivity.obj6Y, BoxGameActivity.mRaw6TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj1 = new Objects(BoxGameActivity.wrongObj1X, BoxGameActivity.wrongObj1Y, BoxGameActivity.mWRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj2 = new Objects(BoxGameActivity.wrongObj2X, BoxGameActivity.wrongObj2Y, BoxGameActivity.mWRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1Sound = R.raw.ruimach;
+			BoxGameActivity.obj2Sound = R.raw.rocket;
+			BoxGameActivity.obj3Sound = R.raw.robi;
+			BoxGameActivity.obj4Sound = R.raw.rongdhonu;
+			BoxGameActivity.obj5Sound = R.raw.rani;
+			BoxGameActivity.obj6Sound = R.raw.rana;
+			BoxGameActivity.wrongObj1Sound = R.raw.mohis;
+			BoxGameActivity.wrongObj2Sound = R.raw.boi;
+			BoxGameActivity.letterSound = R.raw.raw;
+		}
+		else if(i == 9)
+		{
+			BoxGameActivity.letter = new Letter(BoxGameActivity.letterX, BoxGameActivity.letterY, 80, 80, BoxGameActivity.mRawTextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1 = new Objects(BoxGameActivity.obj1X, BoxGameActivity.obj1Y, BoxGameActivity.mRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj2 = new Objects(BoxGameActivity.obj2X, BoxGameActivity.obj2Y, BoxGameActivity.mRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj3 = new Objects(BoxGameActivity.obj3X, BoxGameActivity.obj3Y, BoxGameActivity.mRaw3TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj4 = new Objects(BoxGameActivity.obj4X, BoxGameActivity.obj4Y, BoxGameActivity.mRaw4TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj5 = new Objects(BoxGameActivity.obj5X, BoxGameActivity.obj5Y, BoxGameActivity.mRaw5TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj6 = new Objects(BoxGameActivity.obj6X, BoxGameActivity.obj6Y, BoxGameActivity.mRaw6TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj1 = new Objects(BoxGameActivity.wrongObj1X, BoxGameActivity.wrongObj1Y, BoxGameActivity.mWRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj2 = new Objects(BoxGameActivity.wrongObj2X, BoxGameActivity.wrongObj2Y, BoxGameActivity.mWRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1Sound = R.raw.ruimach;
+			BoxGameActivity.obj2Sound = R.raw.rocket;
+			BoxGameActivity.obj3Sound = R.raw.robi;
+			BoxGameActivity.obj4Sound = R.raw.rongdhonu;
+			BoxGameActivity.obj5Sound = R.raw.rani;
+			BoxGameActivity.obj6Sound = R.raw.rana;
+			BoxGameActivity.wrongObj1Sound = R.raw.mohis;
+			BoxGameActivity.wrongObj2Sound = R.raw.boi;
+			BoxGameActivity.letterSound = R.raw.raw;
+		}
+		else if(i == 10)
+		{
+			BoxGameActivity.letter = new Letter(BoxGameActivity.letterX, BoxGameActivity.letterY, 80, 80, BoxGameActivity.mRawTextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1 = new Objects(BoxGameActivity.obj1X, BoxGameActivity.obj1Y, BoxGameActivity.mRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj2 = new Objects(BoxGameActivity.obj2X, BoxGameActivity.obj2Y, BoxGameActivity.mRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj3 = new Objects(BoxGameActivity.obj3X, BoxGameActivity.obj3Y, BoxGameActivity.mRaw3TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj4 = new Objects(BoxGameActivity.obj4X, BoxGameActivity.obj4Y, BoxGameActivity.mRaw4TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj5 = new Objects(BoxGameActivity.obj5X, BoxGameActivity.obj5Y, BoxGameActivity.mRaw5TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj6 = new Objects(BoxGameActivity.obj6X, BoxGameActivity.obj6Y, BoxGameActivity.mRaw6TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj1 = new Objects(BoxGameActivity.wrongObj1X, BoxGameActivity.wrongObj1Y, BoxGameActivity.mWRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj2 = new Objects(BoxGameActivity.wrongObj2X, BoxGameActivity.wrongObj2Y, BoxGameActivity.mWRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1Sound = R.raw.ruimach;
+			BoxGameActivity.obj2Sound = R.raw.rocket;
+			BoxGameActivity.obj3Sound = R.raw.robi;
+			BoxGameActivity.obj4Sound = R.raw.rongdhonu;
+			BoxGameActivity.obj5Sound = R.raw.rani;
+			BoxGameActivity.obj6Sound = R.raw.rana;
+			BoxGameActivity.wrongObj1Sound = R.raw.mohis;
+			BoxGameActivity.wrongObj2Sound = R.raw.boi;
+			BoxGameActivity.letterSound = R.raw.raw;
+		}
+		else if(i == 11)
+		{
+			BoxGameActivity.letter = new Letter(BoxGameActivity.letterX, BoxGameActivity.letterY, 80, 80, BoxGameActivity.mRawTextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1 = new Objects(BoxGameActivity.obj1X, BoxGameActivity.obj1Y, BoxGameActivity.mRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj2 = new Objects(BoxGameActivity.obj2X, BoxGameActivity.obj2Y, BoxGameActivity.mRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj3 = new Objects(BoxGameActivity.obj3X, BoxGameActivity.obj3Y, BoxGameActivity.mRaw3TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj4 = new Objects(BoxGameActivity.obj4X, BoxGameActivity.obj4Y, BoxGameActivity.mRaw4TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj5 = new Objects(BoxGameActivity.obj5X, BoxGameActivity.obj5Y, BoxGameActivity.mRaw5TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj6 = new Objects(BoxGameActivity.obj6X, BoxGameActivity.obj6Y, BoxGameActivity.mRaw6TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj1 = new Objects(BoxGameActivity.wrongObj1X, BoxGameActivity.wrongObj1Y, BoxGameActivity.mWRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj2 = new Objects(BoxGameActivity.wrongObj2X, BoxGameActivity.wrongObj2Y, BoxGameActivity.mWRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1Sound = R.raw.ruimach;
+			BoxGameActivity.obj2Sound = R.raw.rocket;
+			BoxGameActivity.obj3Sound = R.raw.robi;
+			BoxGameActivity.obj4Sound = R.raw.rongdhonu;
+			BoxGameActivity.obj5Sound = R.raw.rani;
+			BoxGameActivity.obj6Sound = R.raw.rana;
+			BoxGameActivity.wrongObj1Sound = R.raw.mohis;
+			BoxGameActivity.wrongObj2Sound = R.raw.boi;
+			BoxGameActivity.letterSound = R.raw.raw;
+		}
+		else if(i == 12)
+		{
+			BoxGameActivity.letter = new Letter(BoxGameActivity.letterX, BoxGameActivity.letterY, 80, 80, BoxGameActivity.mRawTextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1 = new Objects(BoxGameActivity.obj1X, BoxGameActivity.obj1Y, BoxGameActivity.mRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj2 = new Objects(BoxGameActivity.obj2X, BoxGameActivity.obj2Y, BoxGameActivity.mRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj3 = new Objects(BoxGameActivity.obj3X, BoxGameActivity.obj3Y, BoxGameActivity.mRaw3TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj4 = new Objects(BoxGameActivity.obj4X, BoxGameActivity.obj4Y, BoxGameActivity.mRaw4TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj5 = new Objects(BoxGameActivity.obj5X, BoxGameActivity.obj5Y, BoxGameActivity.mRaw5TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj6 = new Objects(BoxGameActivity.obj6X, BoxGameActivity.obj6Y, BoxGameActivity.mRaw6TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj1 = new Objects(BoxGameActivity.wrongObj1X, BoxGameActivity.wrongObj1Y, BoxGameActivity.mWRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj2 = new Objects(BoxGameActivity.wrongObj2X, BoxGameActivity.wrongObj2Y, BoxGameActivity.mWRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1Sound = R.raw.ruimach;
+			BoxGameActivity.obj2Sound = R.raw.rocket;
+			BoxGameActivity.obj3Sound = R.raw.robi;
+			BoxGameActivity.obj4Sound = R.raw.rongdhonu;
+			BoxGameActivity.obj5Sound = R.raw.rani;
+			BoxGameActivity.obj6Sound = R.raw.rana;
+			BoxGameActivity.wrongObj1Sound = R.raw.mohis;
+			BoxGameActivity.wrongObj2Sound = R.raw.boi;
+			BoxGameActivity.letterSound = R.raw.raw;
+		}
+		else if(i == 13)
+		{
+			BoxGameActivity.letter = new Letter(BoxGameActivity.letterX, BoxGameActivity.letterY, 80, 80, BoxGameActivity.mRawTextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1 = new Objects(BoxGameActivity.obj1X, BoxGameActivity.obj1Y, BoxGameActivity.mRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj2 = new Objects(BoxGameActivity.obj2X, BoxGameActivity.obj2Y, BoxGameActivity.mRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj3 = new Objects(BoxGameActivity.obj3X, BoxGameActivity.obj3Y, BoxGameActivity.mRaw3TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj4 = new Objects(BoxGameActivity.obj4X, BoxGameActivity.obj4Y, BoxGameActivity.mRaw4TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj5 = new Objects(BoxGameActivity.obj5X, BoxGameActivity.obj5Y, BoxGameActivity.mRaw5TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj6 = new Objects(BoxGameActivity.obj6X, BoxGameActivity.obj6Y, BoxGameActivity.mRaw6TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj1 = new Objects(BoxGameActivity.wrongObj1X, BoxGameActivity.wrongObj1Y, BoxGameActivity.mWRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj2 = new Objects(BoxGameActivity.wrongObj2X, BoxGameActivity.wrongObj2Y, BoxGameActivity.mWRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1Sound = R.raw.ruimach;
+			BoxGameActivity.obj2Sound = R.raw.rocket;
+			BoxGameActivity.obj3Sound = R.raw.robi;
+			BoxGameActivity.obj4Sound = R.raw.rongdhonu;
+			BoxGameActivity.obj5Sound = R.raw.rani;
+			BoxGameActivity.obj6Sound = R.raw.rana;
+			BoxGameActivity.wrongObj1Sound = R.raw.mohis;
+			BoxGameActivity.wrongObj2Sound = R.raw.boi;
+			BoxGameActivity.letterSound = R.raw.raw;
+		}
+		else if(i == 14)
+		{
+			BoxGameActivity.letter = new Letter(BoxGameActivity.letterX, BoxGameActivity.letterY, 80, 80, BoxGameActivity.mRawTextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1 = new Objects(BoxGameActivity.obj1X, BoxGameActivity.obj1Y, BoxGameActivity.mRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj2 = new Objects(BoxGameActivity.obj2X, BoxGameActivity.obj2Y, BoxGameActivity.mRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj3 = new Objects(BoxGameActivity.obj3X, BoxGameActivity.obj3Y, BoxGameActivity.mRaw3TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj4 = new Objects(BoxGameActivity.obj4X, BoxGameActivity.obj4Y, BoxGameActivity.mRaw4TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj5 = new Objects(BoxGameActivity.obj5X, BoxGameActivity.obj5Y, BoxGameActivity.mRaw5TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj6 = new Objects(BoxGameActivity.obj6X, BoxGameActivity.obj6Y, BoxGameActivity.mRaw6TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj1 = new Objects(BoxGameActivity.wrongObj1X, BoxGameActivity.wrongObj1Y, BoxGameActivity.mWRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj2 = new Objects(BoxGameActivity.wrongObj2X, BoxGameActivity.wrongObj2Y, BoxGameActivity.mWRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1Sound = R.raw.ruimach;
+			BoxGameActivity.obj2Sound = R.raw.rocket;
+			BoxGameActivity.obj3Sound = R.raw.robi;
+			BoxGameActivity.obj4Sound = R.raw.rongdhonu;
+			BoxGameActivity.obj5Sound = R.raw.rani;
+			BoxGameActivity.obj6Sound = R.raw.rana;
+			BoxGameActivity.wrongObj1Sound = R.raw.mohis;
+			BoxGameActivity.wrongObj2Sound = R.raw.boi;
+			BoxGameActivity.letterSound = R.raw.raw;
+		}
+		//Letter-A
+		else if(i == 15)
+		{
+			BoxGameActivity.letter = new Letter(BoxGameActivity.letterX, BoxGameActivity.letterY, 80, 80, BoxGameActivity.mATextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1 = new Objects(BoxGameActivity.obj1X, BoxGameActivity.obj1Y, BoxGameActivity.mA1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj2 = new Objects(BoxGameActivity.obj2X, BoxGameActivity.obj2Y, BoxGameActivity.mA2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj3 = new Objects(BoxGameActivity.obj3X, BoxGameActivity.obj3Y, BoxGameActivity.mA3TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj4 = new Objects(BoxGameActivity.obj4X, BoxGameActivity.obj4Y, BoxGameActivity.mA4TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj5 = new Objects(BoxGameActivity.obj5X, BoxGameActivity.obj5Y, BoxGameActivity.mA5TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj6 = new Objects(BoxGameActivity.obj6X, BoxGameActivity.obj6Y, BoxGameActivity.mA6TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj1 = new Objects(BoxGameActivity.wrongObj1X, BoxGameActivity.wrongObj1Y, BoxGameActivity.mWA1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj2 = new Objects(BoxGameActivity.wrongObj2X, BoxGameActivity.wrongObj2Y, BoxGameActivity.mWA2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1Sound = R.raw.ruimach;
+			BoxGameActivity.obj2Sound = R.raw.rocket;
+			BoxGameActivity.obj3Sound = R.raw.robi;
+			BoxGameActivity.obj4Sound = R.raw.rongdhonu;
+			BoxGameActivity.obj5Sound = R.raw.rani;
+			BoxGameActivity.obj6Sound = R.raw.rana;
+			BoxGameActivity.wrongObj1Sound = R.raw.mohis;
+			BoxGameActivity.wrongObj2Sound = R.raw.boi;
+			BoxGameActivity.letterSound = R.raw.raw;
+		}
+		else if(i == 16)
+		{
+			BoxGameActivity.letter = new Letter(BoxGameActivity.letterX, BoxGameActivity.letterY, 80, 80, BoxGameActivity.mRawTextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1 = new Objects(BoxGameActivity.obj1X, BoxGameActivity.obj1Y, BoxGameActivity.mRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj2 = new Objects(BoxGameActivity.obj2X, BoxGameActivity.obj2Y, BoxGameActivity.mRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj3 = new Objects(BoxGameActivity.obj3X, BoxGameActivity.obj3Y, BoxGameActivity.mRaw3TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj4 = new Objects(BoxGameActivity.obj4X, BoxGameActivity.obj4Y, BoxGameActivity.mRaw4TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj5 = new Objects(BoxGameActivity.obj5X, BoxGameActivity.obj5Y, BoxGameActivity.mRaw5TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj6 = new Objects(BoxGameActivity.obj6X, BoxGameActivity.obj6Y, BoxGameActivity.mRaw6TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj1 = new Objects(BoxGameActivity.wrongObj1X, BoxGameActivity.wrongObj1Y, BoxGameActivity.mWRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj2 = new Objects(BoxGameActivity.wrongObj2X, BoxGameActivity.wrongObj2Y, BoxGameActivity.mWRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1Sound = R.raw.ruimach;
+			BoxGameActivity.obj2Sound = R.raw.rocket;
+			BoxGameActivity.obj3Sound = R.raw.robi;
+			BoxGameActivity.obj4Sound = R.raw.rongdhonu;
+			BoxGameActivity.obj5Sound = R.raw.rani;
+			BoxGameActivity.obj6Sound = R.raw.rana;
+			BoxGameActivity.wrongObj1Sound = R.raw.mohis;
+			BoxGameActivity.wrongObj2Sound = R.raw.boi;
+			BoxGameActivity.letterSound = R.raw.raw;
+		}
+		else if(i == 17)
+		{
+			BoxGameActivity.letter = new Letter(BoxGameActivity.letterX, BoxGameActivity.letterY, 80, 80, BoxGameActivity.mRawTextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1 = new Objects(BoxGameActivity.obj1X, BoxGameActivity.obj1Y, BoxGameActivity.mRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj2 = new Objects(BoxGameActivity.obj2X, BoxGameActivity.obj2Y, BoxGameActivity.mRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj3 = new Objects(BoxGameActivity.obj3X, BoxGameActivity.obj3Y, BoxGameActivity.mRaw3TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj4 = new Objects(BoxGameActivity.obj4X, BoxGameActivity.obj4Y, BoxGameActivity.mRaw4TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj5 = new Objects(BoxGameActivity.obj5X, BoxGameActivity.obj5Y, BoxGameActivity.mRaw5TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj6 = new Objects(BoxGameActivity.obj6X, BoxGameActivity.obj6Y, BoxGameActivity.mRaw6TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj1 = new Objects(BoxGameActivity.wrongObj1X, BoxGameActivity.wrongObj1Y, BoxGameActivity.mWRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj2 = new Objects(BoxGameActivity.wrongObj2X, BoxGameActivity.wrongObj2Y, BoxGameActivity.mWRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1Sound = R.raw.ruimach;
+			BoxGameActivity.obj2Sound = R.raw.rocket;
+			BoxGameActivity.obj3Sound = R.raw.robi;
+			BoxGameActivity.obj4Sound = R.raw.rongdhonu;
+			BoxGameActivity.obj5Sound = R.raw.rani;
+			BoxGameActivity.obj6Sound = R.raw.rana;
+			BoxGameActivity.wrongObj1Sound = R.raw.mohis;
+			BoxGameActivity.wrongObj2Sound = R.raw.boi;
+			BoxGameActivity.letterSound = R.raw.raw;
+		}
+		else if(i == 18)
+		{
+			BoxGameActivity.letter = new Letter(BoxGameActivity.letterX, BoxGameActivity.letterY, 80, 80, BoxGameActivity.mRawTextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
+			BoxGameActivity.obj1 = new Objects(BoxGameActivity.obj1X, BoxGameActivity.obj1Y, BoxGameActivity.mRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj2 = new Objects(BoxGameActivity.obj2X, BoxGameActivity.obj2Y, BoxGameActivity.mRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj3 = new Objects(BoxGameActivity.obj3X, BoxGameActivity.obj3Y, BoxGameActivity.mRaw3TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj4 = new Objects(BoxGameActivity.obj4X, BoxGameActivity.obj4Y, BoxGameActivity.mRaw4TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj5 = new Objects(BoxGameActivity.obj5X, BoxGameActivity.obj5Y, BoxGameActivity.mRaw5TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.obj6 = new Objects(BoxGameActivity.obj6X, BoxGameActivity.obj6Y, BoxGameActivity.mRaw6TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj1 = new Objects(BoxGameActivity.wrongObj1X, BoxGameActivity.wrongObj1Y, BoxGameActivity.mWRaw1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+			BoxGameActivity.wrongObj2 = new Objects(BoxGameActivity.wrongObj2X, BoxGameActivity.wrongObj2Y, BoxGameActivity.mWRaw2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
+					
 			BoxGameActivity.obj1Sound = R.raw.ruimach;
 			BoxGameActivity.obj2Sound = R.raw.rocket;
 			BoxGameActivity.obj3Sound = R.raw.robi;
@@ -105,9 +453,8 @@ public class LevelObject
 			BoxGameActivity.wrongObj2Sound = R.raw.rongdhonu;
 			BoxGameActivity.letterSound = R.raw.toh;
 		}
-		
 		//Letter-To
-		else if(i == 500)
+		else if(i == 20)
 		{
 			BoxGameActivity.obj1 = new Objects(BoxGameActivity.obj1X, BoxGameActivity.obj1Y, BoxGameActivity.mTo1TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
 			BoxGameActivity.obj2 = new Objects(BoxGameActivity.obj2X, BoxGameActivity.obj2Y, BoxGameActivity.mTo2TextureRegion, BoxGameActivity.boxGameActivityInstance.getVertexBufferObjectManager());
