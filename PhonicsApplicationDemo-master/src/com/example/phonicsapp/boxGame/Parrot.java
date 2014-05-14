@@ -117,6 +117,10 @@ public class Parrot extends AnimatedSprite
 				{
 					Functions.playAudio(R.raw.box_toh);
 				}
+				else if(BoxGameActivity.boxGameMenuLetterSelector==20)
+				{
+					Functions.playAudio(R.raw.box_toh);
+				}
 				
 			break;
 			
@@ -179,7 +183,7 @@ public class Parrot extends AnimatedSprite
 		}
 		else if(BoxGameActivity.boxGameMenuLetterSelector == 6||BoxGameActivity.boxGameMenuLetterSelector == 14||
 				   BoxGameActivity.boxGameMenuLetterSelector == 13||BoxGameActivity.boxGameMenuLetterSelector == 3||
-				   BoxGameActivity.boxGameMenuLetterSelector == 19)
+				   BoxGameActivity.boxGameMenuLetterSelector == 9)
 		{
 			pathModifier(new Path(2).to(BoxGameActivity.CAMERA_WIDTH, BoxGameActivity.CAMERA_HEIGHT / 2 - 340)
 					.to(BoxGameActivity.CAMERA_WIDTH - 350,BoxGameActivity.CAMERA_HEIGHT / 2 - 340), 

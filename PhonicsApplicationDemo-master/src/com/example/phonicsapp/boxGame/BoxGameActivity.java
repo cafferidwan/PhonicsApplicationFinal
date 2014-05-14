@@ -477,6 +477,48 @@ public class BoxGameActivity extends SimpleBaseGameActivity
 	public static BitmapTextureAtlas mBitmapTextureAtlasWA1;
 	public static BitmapTextureAtlas mBitmapTextureAtlasWA2;
 	
+	//Letter-Talibasha
+	public static ITextureRegion mTalibasha1TextureRegion;
+	public static ITextureRegion mTalibasha2TextureRegion;
+	public static ITextureRegion mTalibasha3TextureRegion;
+	public static ITextureRegion mTalibasha4TextureRegion;
+	public static ITextureRegion mTalibasha5TextureRegion;
+	public static ITextureRegion mTalibasha6TextureRegion;
+	public static ITextureRegion mTalibashaTextureRegion;
+	public static ITextureRegion mWTalibasha1TextureRegion;
+	public static ITextureRegion mWTalibasha2TextureRegion;
+	
+	public static BitmapTextureAtlas mBitmapTextureAtlasTalibasha1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasTalibasha2;
+	public static BitmapTextureAtlas mBitmapTextureAtlasTalibasha3;
+	public static BitmapTextureAtlas mBitmapTextureAtlasTalibasha4;
+	public static BitmapTextureAtlas mBitmapTextureAtlasTalibasha5;
+	public static BitmapTextureAtlas mBitmapTextureAtlasTalibasha6;
+	public static BitmapTextureAtlas mBitmapTextureAtlasTalibasha;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWTalibasha1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWTalibasha2;
+	
+//	//Letter-Lo
+//	public static ITextureRegion mTalibasha1TextureRegion;
+//	public static ITextureRegion mTalibasha2TextureRegion;
+//	public static ITextureRegion mTalibasha3TextureRegion;
+//	public static ITextureRegion mTalibasha4TextureRegion;
+//	public static ITextureRegion mTalibasha5TextureRegion;
+//	public static ITextureRegion mTalibasha6TextureRegion;
+//	public static ITextureRegion mTalibashaTextureRegion;
+//	public static ITextureRegion mWTalibasha1TextureRegion;
+//	public static ITextureRegion mWTalibasha2TextureRegion;
+//	
+//	public static BitmapTextureAtlas mBitmapTextureAtlasTalibasha1;
+//	public static BitmapTextureAtlas mBitmapTextureAtlasTalibasha2;
+//	public static BitmapTextureAtlas mBitmapTextureAtlasTalibasha3;
+//	public static BitmapTextureAtlas mBitmapTextureAtlasTalibasha4;
+//	public static BitmapTextureAtlas mBitmapTextureAtlasTalibasha5;
+//	public static BitmapTextureAtlas mBitmapTextureAtlasTalibasha6;
+//	public static BitmapTextureAtlas mBitmapTextureAtlasTalibasha;
+//	public static BitmapTextureAtlas mBitmapTextureAtlasWTalibasha1;
+//	public static BitmapTextureAtlas mBitmapTextureAtlasWTalibasha2;
+	
 	
 	public static Sprite backGround, openedBox, closedBox;
 	static Sprite obj1, obj2, obj3, obj4, obj5, obj6,wrongObj1, wrongObj2;
@@ -885,7 +927,7 @@ public class BoxGameActivity extends SimpleBaseGameActivity
 		}
 		else if(boxGameMenuLetterSelector==20)
 		{
-			levelControl(boxGameMenuLetterSelector);
+			levelControl(boxGameMenuLetterSelector); 
 		}
 		
 	}
