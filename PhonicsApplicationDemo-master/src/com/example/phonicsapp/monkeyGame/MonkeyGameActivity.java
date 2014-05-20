@@ -232,20 +232,24 @@ public class MonkeyGameActivity  extends SimpleBaseGameActivity implements IOnAr
 	@Override
 	public void onBackPressed()
 	{
-	    new AlertDialog.Builder(this)
-	        .setTitle("Really Exit?")
-	        .setMessage("Are you sure you want to exit?")
-	        .setNegativeButton(android.R.string.no, null)
-	        .setPositiveButton(android.R.string.yes, new OnClickListener()
-	        {
-
-	            public void onClick(DialogInterface arg0, int arg1) 
-	            {
-	            	aCount = 0;
-					mFaceCount = -100; 
-	                MonkeyGameActivity.super.onBackPressed();
-	            }
-	        }).create().show();
+//	    new AlertDialog.Builder(this)
+//	        .setTitle("Really Exit?")
+//	        .setMessage("Are you sure you want to exit?")
+//	        .setNegativeButton(android.R.string.no, null)
+//	        .setPositiveButton(android.R.string.yes, new OnClickListener()
+//	        {
+//
+//	            public void onClick(DialogInterface arg0, int arg1) 
+//	            {
+//	            	aCount = 0;
+//					mFaceCount = -100; 
+//	                MonkeyGameActivity.super.onBackPressed();
+//	            }
+//	        }).create().show();
+		
+		aCount = 0;
+		mFaceCount = -100; 
+		finish();
 	}
 	
 	@Override
@@ -335,11 +339,71 @@ public class MonkeyGameActivity  extends SimpleBaseGameActivity implements IOnAr
 		{
 			ObjectRemoveFunctions.playAudio(R.raw.monkey_mo);
 		}
-		else if(monkeyGameMenuLetterSelector==6)
+		else if(monkeyGameMenuLetterSelector==2)
 		{
 			ObjectRemoveFunctions.playAudio(R.raw.monkey_bo);
 		}
+		else if(monkeyGameMenuLetterSelector==3)
+		{
+			ObjectRemoveFunctions.playAudio(R.raw.monkey_ro);
+		}
 		else if(monkeyGameMenuLetterSelector==4)
+		{
+			ObjectRemoveFunctions.playAudio(R.raw.monkey_toh);
+		}
+		else if(monkeyGameMenuLetterSelector==5)
+		{
+			ObjectRemoveFunctions.playAudio(R.raw.monkey_bo);
+		}
+		else if(monkeyGameMenuLetterSelector==6)
+		{
+			ObjectRemoveFunctions.playAudio(R.raw.monkey_ro);
+		}
+		else if(monkeyGameMenuLetterSelector==7)
+		{
+			ObjectRemoveFunctions.playAudio(R.raw.monkey_toh);
+		}
+		else if(monkeyGameMenuLetterSelector==8)
+		{
+			ObjectRemoveFunctions.playAudio(R.raw.monkey_bo);
+		}
+		else if(monkeyGameMenuLetterSelector==9)
+		{
+			ObjectRemoveFunctions.playAudio(R.raw.monkey_ro);
+		}
+		else if(monkeyGameMenuLetterSelector==10)
+		{
+			ObjectRemoveFunctions.playAudio(R.raw.monkey_toh);
+		}
+		else if(monkeyGameMenuLetterSelector==11)
+		{
+			ObjectRemoveFunctions.playAudio(R.raw.monkey_bo);
+		}
+		else if(monkeyGameMenuLetterSelector==12)
+		{
+			ObjectRemoveFunctions.playAudio(R.raw.monkey_ro);
+		}
+		else if(monkeyGameMenuLetterSelector==13)
+		{
+			ObjectRemoveFunctions.playAudio(R.raw.monkey_toh);
+		}
+		else if(monkeyGameMenuLetterSelector==14)
+		{
+			ObjectRemoveFunctions.playAudio(R.raw.monkey_bo);
+		}
+		else if(monkeyGameMenuLetterSelector==15)
+		{
+			ObjectRemoveFunctions.playAudio(R.raw.monkey_ro);
+		}
+		else if(monkeyGameMenuLetterSelector==16)
+		{
+			ObjectRemoveFunctions.playAudio(R.raw.monkey_toh);
+		}
+		else if(monkeyGameMenuLetterSelector==17)
+		{
+			ObjectRemoveFunctions.playAudio(R.raw.monkey_bo);
+		}
+		else if(monkeyGameMenuLetterSelector==18)
 		{
 			ObjectRemoveFunctions.playAudio(R.raw.monkey_ro);
 		}
@@ -347,100 +411,116 @@ public class MonkeyGameActivity  extends SimpleBaseGameActivity implements IOnAr
 		{
 			ObjectRemoveFunctions.playAudio(R.raw.monkey_toh);
 		}
+		else if(monkeyGameMenuLetterSelector==20)
+		{
+			ObjectRemoveFunctions.playAudio(R.raw.monkey_bo);
+		}
 		
 	}
-
-	
 
 	public static void startActivity()
 	{
 		if(monkeyGameMenuLetterSelector==1)
 		{
-			if(monkeyGameLevelSelector1[monkeyGameMenuLetterSelector] == 0)
-			{
-				monkeyGameLevelSelector1[monkeyGameMenuLetterSelector] = 1;
-				monkeyGameLevelSelector = 1;
-				mScene.unregisterUpdateHandler(timer1);
-				MonkeyGameActivityActivity.finish();
-				MonkeyGameActivityActivity.startActivity(new Intent(MonkeyGameActivityActivity, MonkeyGameActivity.class));
-			}
-			else if(monkeyGameLevelSelector1[monkeyGameMenuLetterSelector] == 1)
-			{
-				monkeyGameLevelSelector = 0;
-				mScene.unregisterUpdateHandler(timer1);
-				MonkeyGameActivityActivity.finish();
-				MonkeyGameActivityActivity.startActivity(new Intent(MonkeyGameActivityActivity, GameMainPage.class));
-		
-				monkeyGameLevelSelector1[monkeyGameMenuLetterSelector] = 0;
-			}
-		
+			levelSelector(monkeyGameMenuLetterSelector);
 		}
-		else if(monkeyGameMenuLetterSelector==6)
+		else if(monkeyGameMenuLetterSelector==2)
 		{
-			if(monkeyGameLevelSelector1[monkeyGameMenuLetterSelector] == 0)
-			{
-				monkeyGameLevelSelector1[monkeyGameMenuLetterSelector] = 1;
-				monkeyGameLevelSelector = 1;
-				mScene.unregisterUpdateHandler(timer1);
-				MonkeyGameActivityActivity.finish();
-				MonkeyGameActivityActivity.startActivity(new Intent(MonkeyGameActivityActivity, MonkeyGameActivity.class));
-			}
-			else if(monkeyGameLevelSelector1[monkeyGameMenuLetterSelector] == 1)
-			{
-				monkeyGameLevelSelector = 0;
-				mScene.unregisterUpdateHandler(timer1);
-				MonkeyGameActivityActivity.finish();
-				MonkeyGameActivityActivity.startActivity(new Intent(MonkeyGameActivityActivity, GameMainPage.class));
-		
-				monkeyGameLevelSelector1[monkeyGameMenuLetterSelector] = 0;
-			}
+			levelSelector(monkeyGameMenuLetterSelector);
+		}
+		else if(monkeyGameMenuLetterSelector==3)
+		{
+			levelSelector(monkeyGameMenuLetterSelector);
 		}
 		else if(monkeyGameMenuLetterSelector==4)
 		{
-			if(monkeyGameLevelSelector1[monkeyGameMenuLetterSelector] == 0 )
-			{
-				monkeyGameLevelSelector1[monkeyGameMenuLetterSelector] = 1;
-				monkeyGameLevelSelector = 1;
-				mScene.unregisterUpdateHandler(timer1); 
-				MonkeyGameActivityActivity.finish();
-				MonkeyGameActivityActivity.startActivity(new Intent(MonkeyGameActivityActivity, MonkeyGameActivity.class));
-			}
-			else if(monkeyGameLevelSelector1[monkeyGameMenuLetterSelector] == 1 )
-			{
-				monkeyGameLevelSelector = 0;
-				mScene.unregisterUpdateHandler(timer1);
-				MonkeyGameActivityActivity.finish();
-				MonkeyGameActivityActivity.startActivity(new Intent(MonkeyGameActivityActivity, GameMainPage.class));
-		
-				monkeyGameLevelSelector1[monkeyGameMenuLetterSelector] = 0;
-			}
+			levelSelector(monkeyGameMenuLetterSelector);
+		}
+		else if(monkeyGameMenuLetterSelector==5)
+		{
+			levelSelector(monkeyGameMenuLetterSelector);
+		}
+		else if(monkeyGameMenuLetterSelector==6)
+		{
+			levelSelector(monkeyGameMenuLetterSelector);
+		}
+		else if(monkeyGameMenuLetterSelector==7)
+		{
+			levelSelector(monkeyGameMenuLetterSelector);
+		}
+		else if(monkeyGameMenuLetterSelector==8)
+		{
+			levelSelector(monkeyGameMenuLetterSelector);
+		}
+		else if(monkeyGameMenuLetterSelector==9)
+		{
+			levelSelector(monkeyGameMenuLetterSelector);
+		}
+		else if(monkeyGameMenuLetterSelector==10)
+		{
+			levelSelector(monkeyGameMenuLetterSelector);
+		}
+		else if(monkeyGameMenuLetterSelector==11)
+		{
+			levelSelector(monkeyGameMenuLetterSelector);
+		}
+		else if(monkeyGameMenuLetterSelector==12)
+		{
+			levelSelector(monkeyGameMenuLetterSelector);
+		}
+		else if(monkeyGameMenuLetterSelector==13)
+		{
+			levelSelector(monkeyGameMenuLetterSelector);
+		}
+		else if(monkeyGameMenuLetterSelector==14)
+		{
+			levelSelector(monkeyGameMenuLetterSelector);
+		}
+		else if(monkeyGameMenuLetterSelector==15)
+		{
+			levelSelector(monkeyGameMenuLetterSelector);
+		}
+		else if(monkeyGameMenuLetterSelector==16)
+		{
+			levelSelector(monkeyGameMenuLetterSelector);
+		}
+		else if(monkeyGameMenuLetterSelector==17)
+		{
+			levelSelector(monkeyGameMenuLetterSelector);
+		}
+		else if(monkeyGameMenuLetterSelector==18)
+		{
+			levelSelector(monkeyGameMenuLetterSelector);
 		}
 		else if(monkeyGameMenuLetterSelector==19)
 		{
-			if(monkeyGameLevelSelector1[monkeyGameMenuLetterSelector] == 0 )
-			{
-				monkeyGameLevelSelector1[monkeyGameMenuLetterSelector] = 1;
-				
-				mScene.unregisterUpdateHandler(timer1);
-				MonkeyGameActivityActivity.finish();
-				MonkeyGameActivityActivity.startActivity(new Intent(MonkeyGameActivityActivity, MonkeyGameActivity.class));
-			}
-			else if(monkeyGameLevelSelector1[monkeyGameMenuLetterSelector] == 1 )
-			{
-				mScene.unregisterUpdateHandler(timer1);
-				MonkeyGameActivityActivity.finish();
-				MonkeyGameActivityActivity.startActivity(new Intent(MonkeyGameActivityActivity, GameMainPage.class));
-		
-				monkeyGameLevelSelector1[monkeyGameMenuLetterSelector] = 0;
-			}
+			levelSelector(monkeyGameMenuLetterSelector);
 		}
+		else if(monkeyGameMenuLetterSelector==20)
+		{
+			levelSelector(monkeyGameMenuLetterSelector);
+		}
+		
 	}
 	
-	// ===========================================================
-	// Methods
-	// ===========================================================
-
-	// ===========================================================
-	// Inner and Anonymous Classes
-	// ===========================================================
+	public static void levelSelector(int a)
+	{
+		if(monkeyGameLevelSelector1[a] == 0)
+		{
+			monkeyGameLevelSelector1[a] = 1;
+			monkeyGameLevelSelector = 1;
+			mScene.unregisterUpdateHandler(timer1);
+			MonkeyGameActivityActivity.finish();
+			MonkeyGameActivityActivity.startActivity(new Intent(MonkeyGameActivityActivity, MonkeyGameActivity.class));
+		}
+		else if(monkeyGameLevelSelector1[a] == 1)
+		{
+			monkeyGameLevelSelector = 0;
+			mScene.unregisterUpdateHandler(timer1);
+			MonkeyGameActivityActivity.finish();
+			MonkeyGameActivityActivity.startActivity(new Intent(MonkeyGameActivityActivity, GameMainPage.class));
+	
+			monkeyGameLevelSelector1[a] = 0;
+		}
+	}
 }
