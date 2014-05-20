@@ -16,7 +16,7 @@ public class GameObjects
 	
 	public static void createObjects(int a)
 	{
-		if(a==1)
+		if(a==1||a==2||a==5||a==8||a==18)
 		{
 			MonkeyGameActivity.backGround = new Sprite(0, 0, MonkeyGameActivity.mJungleBackGroundTextureRegion,
 					MonkeyGameActivity.MonkeyGameActivityActivity.getVertexBufferObjectManager());
@@ -24,15 +24,7 @@ public class GameObjects
 			MonkeyGameActivity.backGround.setHeight(MonkeyGameActivity.CAMERA_HEIGHT);
 			MonkeyGameActivity.mScene.attachChild(MonkeyGameActivity.backGround);
 		}
-		else if(a==6)
-		{
-			MonkeyGameActivity.backGround = new Sprite(0, 0, MonkeyGameActivity.mBeachBackGroundTextureRegion,
-					MonkeyGameActivity.MonkeyGameActivityActivity.getVertexBufferObjectManager());
-			MonkeyGameActivity.backGround.setWidth(MonkeyGameActivity.CAMERA_WIDTH);
-			MonkeyGameActivity.backGround.setHeight(MonkeyGameActivity.CAMERA_HEIGHT);
-			MonkeyGameActivity.mScene.attachChild(MonkeyGameActivity.backGround);
-		}
-		else if(a==4)
+		else if(a==4||a==7||a==15||a==16||a==20)
 		{
 			MonkeyGameActivity.backGround = new Sprite(0, 0, MonkeyGameActivity.mUnderWaterBackGroundTextureRegion,
 					MonkeyGameActivity.MonkeyGameActivityActivity.getVertexBufferObjectManager());
@@ -53,7 +45,15 @@ public class GameObjects
 			}
 			
 		}
-		else if(a==19)
+		else if(a==6||a==3||a==9||a==13||a==14)
+		{
+			MonkeyGameActivity.backGround = new Sprite(0, 0, MonkeyGameActivity.mBeachBackGroundTextureRegion,
+					MonkeyGameActivity.MonkeyGameActivityActivity.getVertexBufferObjectManager());
+			MonkeyGameActivity.backGround.setWidth(MonkeyGameActivity.CAMERA_WIDTH);
+			MonkeyGameActivity.backGround.setHeight(MonkeyGameActivity.CAMERA_HEIGHT);
+			MonkeyGameActivity.mScene.attachChild(MonkeyGameActivity.backGround);
+		}
+		else if(a==19||a==10||a==11||a==12||a==17)
 		{
 			MonkeyGameActivity.backGround = new Sprite(0, 0, MonkeyGameActivity.mPlanetBackGroundTextureRegion,
 					MonkeyGameActivity.MonkeyGameActivityActivity.getVertexBufferObjectManager());

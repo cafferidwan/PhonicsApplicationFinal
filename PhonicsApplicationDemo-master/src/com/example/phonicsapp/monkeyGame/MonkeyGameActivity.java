@@ -115,8 +115,8 @@ public class MonkeyGameActivity  extends SimpleBaseGameActivity implements IOnAr
 	public static ITextureRegion mFaceTextureRegionBo2;
 	public static ITextureRegion mFaceTextureRegionBo3;
 	public static ITextureRegion mFaceTextureRegionBo4;
-	public static ITextureRegion mFaceTextureRegionWA1;
-	public static ITextureRegion mFaceTextureRegionWA2;
+	public static ITextureRegion mFaceTextureRegionWBo1;
+	public static ITextureRegion mFaceTextureRegionWBo2;
 	
 	//Letter-Ko
 	public static BitmapTextureAtlas mBitmapTextureAtlasRaw1;
@@ -163,6 +163,230 @@ public class MonkeyGameActivity  extends SimpleBaseGameActivity implements IOnAr
 	public static ITextureRegion mFaceTextureRegionWTo1;
 	public static ITextureRegion mFaceTextureRegionWTo2;
 	
+	//Letter-Aa
+	public static BitmapTextureAtlas mBitmapTextureAtlasAa1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasAa2;
+	public static BitmapTextureAtlas mBitmapTextureAtlasAa3;
+	public static BitmapTextureAtlas mBitmapTextureAtlasAa4;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWAa1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWAa2;
+		
+	public static ITextureRegion mFaceTextureRegionAa1;
+	public static ITextureRegion mFaceTextureRegionAa2;
+	public static ITextureRegion mFaceTextureRegionAa3;
+	public static ITextureRegion mFaceTextureRegionAa4;
+	public static ITextureRegion mFaceTextureRegionWAa1;
+	public static ITextureRegion mFaceTextureRegionWAa2;
+	
+	//Letter-Lo
+	public static BitmapTextureAtlas mBitmapTextureAtlasLo1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasLo2;
+	public static BitmapTextureAtlas mBitmapTextureAtlasLo3;
+	public static BitmapTextureAtlas mBitmapTextureAtlasLo4;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWLo1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWLo2;
+		
+	public static ITextureRegion mFaceTextureRegionLo1;
+	public static ITextureRegion mFaceTextureRegionLo2;
+	public static ITextureRegion mFaceTextureRegionLo3;
+	public static ITextureRegion mFaceTextureRegionLo4;
+	public static ITextureRegion mFaceTextureRegionWLo1;
+	public static ITextureRegion mFaceTextureRegionWLo2;
+	
+	//Letter-Ko
+	public static BitmapTextureAtlas mBitmapTextureAtlasKo1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasKo2;
+	public static BitmapTextureAtlas mBitmapTextureAtlasKo3;
+	public static BitmapTextureAtlas mBitmapTextureAtlasKo4;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWKo1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWKo2;
+		
+	public static ITextureRegion mFaceTextureRegionKo1;
+	public static ITextureRegion mFaceTextureRegionKo2;
+	public static ITextureRegion mFaceTextureRegionKo3;
+	public static ITextureRegion mFaceTextureRegionKo4;
+	public static ITextureRegion mFaceTextureRegionWKo1;
+	public static ITextureRegion mFaceTextureRegionWKo2;
+	
+	//Letter-No
+	public static BitmapTextureAtlas mBitmapTextureAtlasNo1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasNo2;
+	public static BitmapTextureAtlas mBitmapTextureAtlasNo3;
+	public static BitmapTextureAtlas mBitmapTextureAtlasNo4;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWNo1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWNo2;
+		
+	public static ITextureRegion mFaceTextureRegionNo1;
+	public static ITextureRegion mFaceTextureRegionNo2;
+	public static ITextureRegion mFaceTextureRegionNo3;
+	public static ITextureRegion mFaceTextureRegionNo4;
+	public static ITextureRegion mFaceTextureRegionWNo1;
+	public static ITextureRegion mFaceTextureRegionWNo2;
+	
+	//Letter-Cho
+	public static BitmapTextureAtlas mBitmapTextureAtlasCho1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasCho2;
+	public static BitmapTextureAtlas mBitmapTextureAtlasCho3;
+	public static BitmapTextureAtlas mBitmapTextureAtlasCho4;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWCho1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWCho2;
+		
+	public static ITextureRegion mFaceTextureRegionCho1;
+	public static ITextureRegion mFaceTextureRegionCho2;
+	public static ITextureRegion mFaceTextureRegionCho3;
+	public static ITextureRegion mFaceTextureRegionCho4;
+	public static ITextureRegion mFaceTextureRegionWCho1;
+	public static ITextureRegion mFaceTextureRegionWCho2;
+	
+	//Letter-E
+	public static BitmapTextureAtlas mBitmapTextureAtlasE1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasE2;
+	public static BitmapTextureAtlas mBitmapTextureAtlasE3;
+	public static BitmapTextureAtlas mBitmapTextureAtlasE4;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWE1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWE2;
+		
+	public static ITextureRegion mFaceTextureRegionE1;
+	public static ITextureRegion mFaceTextureRegionE2;
+	public static ITextureRegion mFaceTextureRegionE3;
+	public static ITextureRegion mFaceTextureRegionE4;
+	public static ITextureRegion mFaceTextureRegionWE1;
+	public static ITextureRegion mFaceTextureRegionWE2;
+	
+	//Letter-Po
+	public static BitmapTextureAtlas mBitmapTextureAtlasPo1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasPo2;
+	public static BitmapTextureAtlas mBitmapTextureAtlasPo3;
+	public static BitmapTextureAtlas mBitmapTextureAtlasPo4;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWPo1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWPo2;
+		
+	public static ITextureRegion mFaceTextureRegionPo1;
+	public static ITextureRegion mFaceTextureRegionPo2;
+	public static ITextureRegion mFaceTextureRegionPo3;
+	public static ITextureRegion mFaceTextureRegionPo4;
+	public static ITextureRegion mFaceTextureRegionWPo1;
+	public static ITextureRegion mFaceTextureRegionWPo2;
+	
+	//Letter-Sho
+	public static BitmapTextureAtlas mBitmapTextureAtlasTalibasha1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasTalibasha2;
+	public static BitmapTextureAtlas mBitmapTextureAtlasTalibasha3;
+	public static BitmapTextureAtlas mBitmapTextureAtlasTalibasha4;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWTalibasha1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWTalibasha2;
+		
+	public static ITextureRegion mFaceTextureRegionTalibasha1;
+	public static ITextureRegion mFaceTextureRegionTalibasha2;
+	public static ITextureRegion mFaceTextureRegionTalibasha3;
+	public static ITextureRegion mFaceTextureRegionTalibasha4;
+	public static ITextureRegion mFaceTextureRegionWTalibasha1;
+	public static ITextureRegion mFaceTextureRegionWTalibasha2;
+	
+	//Letter-Do
+	public static BitmapTextureAtlas mBitmapTextureAtlasDo1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasDo2;
+	public static BitmapTextureAtlas mBitmapTextureAtlasDo3;
+	public static BitmapTextureAtlas mBitmapTextureAtlasDo4;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWDo1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWDo2;
+		
+	public static ITextureRegion mFaceTextureRegionDo1;
+	public static ITextureRegion mFaceTextureRegionDo2;
+	public static ITextureRegion mFaceTextureRegionDo3;
+	public static ITextureRegion mFaceTextureRegionDo4;
+	public static ITextureRegion mFaceTextureRegionWDo1;
+	public static ITextureRegion mFaceTextureRegionWDo2;
+	
+	//Letter-A
+	public static BitmapTextureAtlas mBitmapTextureAtlasA1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasA2;
+	public static BitmapTextureAtlas mBitmapTextureAtlasA3;
+	public static BitmapTextureAtlas mBitmapTextureAtlasA4;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWA1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWA2;
+		
+	public static ITextureRegion mFaceTextureRegionA1;
+	public static ITextureRegion mFaceTextureRegionA2;
+	public static ITextureRegion mFaceTextureRegionA3;
+	public static ITextureRegion mFaceTextureRegionA4;
+	public static ITextureRegion mFaceTextureRegionWA1;
+	public static ITextureRegion mFaceTextureRegionWA2;
+	
+	//Letter-Doh
+	public static BitmapTextureAtlas mBitmapTextureAtlasDoh1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasDoh2;
+	public static BitmapTextureAtlas mBitmapTextureAtlasDoh3;
+	public static BitmapTextureAtlas mBitmapTextureAtlasDoh4;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWDoh1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWDoh2;
+		
+	public static ITextureRegion mFaceTextureRegionDoh1;
+	public static ITextureRegion mFaceTextureRegionDoh2;
+	public static ITextureRegion mFaceTextureRegionDoh3;
+	public static ITextureRegion mFaceTextureRegionDoh4;
+	public static ITextureRegion mFaceTextureRegionWDoh1;
+	public static ITextureRegion mFaceTextureRegionWDoh2;
+	
+	//Letter-Kho
+	public static BitmapTextureAtlas mBitmapTextureAtlasKho1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasKho2;
+	public static BitmapTextureAtlas mBitmapTextureAtlasKho3;
+	public static BitmapTextureAtlas mBitmapTextureAtlasKho4;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWKho1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWKho2;
+		
+	public static ITextureRegion mFaceTextureRegionKho1;
+	public static ITextureRegion mFaceTextureRegionKho2;
+	public static ITextureRegion mFaceTextureRegionKho3;
+	public static ITextureRegion mFaceTextureRegionKho4;
+	public static ITextureRegion mFaceTextureRegionWKho1;
+	public static ITextureRegion mFaceTextureRegionWKho2;
+	
+	//Letter-U
+	public static BitmapTextureAtlas mBitmapTextureAtlasU1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasU2;
+	public static BitmapTextureAtlas mBitmapTextureAtlasU3;
+	public static BitmapTextureAtlas mBitmapTextureAtlasU4;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWU1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWU2;
+		
+	public static ITextureRegion mFaceTextureRegionU1;
+	public static ITextureRegion mFaceTextureRegionU2;
+	public static ITextureRegion mFaceTextureRegionU3;
+	public static ITextureRegion mFaceTextureRegionU4;
+	public static ITextureRegion mFaceTextureRegionWU1;
+	public static ITextureRegion mFaceTextureRegionWU2;
+	
+	//Letter-Go
+	public static BitmapTextureAtlas mBitmapTextureAtlasGo1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasGo2;
+	public static BitmapTextureAtlas mBitmapTextureAtlasGo3;
+	public static BitmapTextureAtlas mBitmapTextureAtlasGo4;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWGo1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWGo2;
+		
+	public static ITextureRegion mFaceTextureRegionGo1;
+	public static ITextureRegion mFaceTextureRegionGo2;
+	public static ITextureRegion mFaceTextureRegionGo3;
+	public static ITextureRegion mFaceTextureRegionGo4;
+	public static ITextureRegion mFaceTextureRegionWGo1;
+	public static ITextureRegion mFaceTextureRegionWGo2;
+	
+	//Letter-Ho
+	public static BitmapTextureAtlas mBitmapTextureAtlasHo1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasHo2;
+	public static BitmapTextureAtlas mBitmapTextureAtlasHo3;
+	public static BitmapTextureAtlas mBitmapTextureAtlasHo4;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWHo1;
+	public static BitmapTextureAtlas mBitmapTextureAtlasWHo2;
+		
+	public static ITextureRegion mFaceTextureRegionHo1;
+	public static ITextureRegion mFaceTextureRegionHo2;
+	public static ITextureRegion mFaceTextureRegionHo3;
+	public static ITextureRegion mFaceTextureRegionHo4;
+	public static ITextureRegion mFaceTextureRegionWHo1;
+	public static ITextureRegion mFaceTextureRegionWHo2;
 	
 	static float mFaceCount = -100;
 
@@ -192,17 +416,6 @@ public class MonkeyGameActivity  extends SimpleBaseGameActivity implements IOnAr
 	public static double monkeyGameObjectScale;
 	public static int[] monkeyGameLevelSelector1 = new int[25];
 	
-	// ===========================================================
-	// Constructors
-	// ===========================================================
-
-	// ===========================================================
-	// Getter & Setter
-	// ===========================================================
-
-	// ===========================================================
-	// Methods for/from SuperClass/Interfaces
-	// ===========================================================
 	
 	@Override
 	public EngineOptions onCreateEngineOptions() 
@@ -250,6 +463,7 @@ public class MonkeyGameActivity  extends SimpleBaseGameActivity implements IOnAr
 		aCount = 0;
 		mFaceCount = -100; 
 		finish();
+		startActivity(new Intent(getBaseContext(), MenuPage.class));
 	}
 	
 	@Override

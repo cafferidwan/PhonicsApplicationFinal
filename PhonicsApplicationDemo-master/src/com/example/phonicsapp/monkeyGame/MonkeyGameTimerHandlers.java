@@ -39,7 +39,11 @@ public class MonkeyGameTimerHandlers
 						{
 							setLevelObject();
 						}
-						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==6)
+						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==2)
+						{
+							setLevelObject();
+						}
+						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==3)
 						{
 							setLevelObject();
 						}
@@ -47,7 +51,67 @@ public class MonkeyGameTimerHandlers
 						{
 							setLevelObject();
 						}
+						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==5)
+						{
+							setLevelObject();
+						}
+						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==6)
+						{
+							setLevelObject();
+						}
+						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==7)
+						{
+							setLevelObject();
+						}
+						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==8)
+						{
+							setLevelObject();
+						}
+						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==9)
+						{
+							setLevelObject();
+						}
+						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==10)
+						{
+							setLevelObject();
+						}
+						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==11)
+						{
+							setLevelObject();
+						}
+						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==12)
+						{
+							setLevelObject();
+						}
+						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==13)
+						{
+							setLevelObject();
+						}
+						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==14)
+						{
+							setLevelObject();
+						}
+						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==15)
+						{
+							setLevelObject();
+						}
+						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==16)
+						{
+							setLevelObject();
+						}
+						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==17)
+						{
+							setLevelObject();
+						}
+						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==18)
+						{
+							setLevelObject();
+						}
 						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==19)
+						{
+							setLevelObject();
+						}
+						else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==20)
 						{
 							setLevelObject();
 						}

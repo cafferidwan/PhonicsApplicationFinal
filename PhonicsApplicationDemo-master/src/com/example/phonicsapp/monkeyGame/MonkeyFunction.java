@@ -44,7 +44,10 @@ public class MonkeyFunction
 		}
 			Path bananaPath = null ;
 			//change reward object according to the letter
-			if(MonkeyGameActivity.monkeyGameMenuLetterSelector==1)
+			
+			//if letter are mo, aa, lo, ko, to
+			if(MonkeyGameActivity.monkeyGameMenuLetterSelector==1||MonkeyGameActivity.monkeyGameMenuLetterSelector==2||MonkeyGameActivity.monkeyGameMenuLetterSelector==5||
+					MonkeyGameActivity.monkeyGameMenuLetterSelector==8||MonkeyGameActivity.monkeyGameMenuLetterSelector==18)
 			{
 				MonkeyGameActivity.position[MonkeyGameActivity.aCount] = new Sprite(0, 50 , MonkeyGameActivity.mFaceTextureRegionBanana,MonkeyGameActivity.vbo); 
 				MonkeyGameActivity.position[MonkeyGameActivity.aCount].setWidth(MonkeyGameActivity.ImageWidthObjects-22);
@@ -52,16 +55,9 @@ public class MonkeyFunction
 			
 				bananaPath = new Path(2).to(MonkeyGameActivity.CAMERA_WIDTH/2, -100).to(MonkeyGameActivity.mFaceCount, MonkeyGameActivity.CAMERA_HEIGHT - MonkeyGameActivity.CAMERA_HEIGHT/3 + 30 );
 			}
-			else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==6)
-			{
-				MonkeyGameActivity.position[MonkeyGameActivity.aCount] = new Sprite(0, 50 , MonkeyGameActivity.mFaceTextureRegionFish,MonkeyGameActivity.vbo); 
-		
-				MonkeyGameActivity.position[MonkeyGameActivity.aCount].setWidth(MonkeyGameActivity.ImageWidthObjects-22);
-				MonkeyGameActivity.position[MonkeyGameActivity.aCount].setHeight(MonkeyGameActivity.ImageHeightObjects-22);
-			
-				bananaPath = new Path(2).to(MonkeyGameActivity.CAMERA_WIDTH/2, -100).to(MonkeyGameActivity.mFaceCount, MonkeyGameActivity.CAMERA_HEIGHT - MonkeyGameActivity.CAMERA_HEIGHT/3 -20 );
-			}
-			else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==4)
+			//if letter are raw, talibasha, do, a, doh
+			else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==4||MonkeyGameActivity.monkeyGameMenuLetterSelector==7||MonkeyGameActivity.monkeyGameMenuLetterSelector==15||
+					MonkeyGameActivity.monkeyGameMenuLetterSelector==16||MonkeyGameActivity.monkeyGameMenuLetterSelector==20)
 			{
 				MonkeyGameActivity.position[MonkeyGameActivity.aCount] = new Sprite(0, 50 , MonkeyGameActivity.mFaceTextureRegionCup,MonkeyGameActivity.vbo); 
 			
@@ -70,7 +66,20 @@ public class MonkeyFunction
 			
 				bananaPath = new Path(2).to(MonkeyGameActivity.CAMERA_WIDTH/2, -100).to(MonkeyGameActivity.mFaceCount, MonkeyGameActivity.CAMERA_HEIGHT - MonkeyGameActivity.CAMERA_HEIGHT/3 + 30 );
 			}
-			else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==19)
+			//if letter are bo, no, cho, e, po
+			else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==3||MonkeyGameActivity.monkeyGameMenuLetterSelector==6||MonkeyGameActivity.monkeyGameMenuLetterSelector==9||
+					MonkeyGameActivity.monkeyGameMenuLetterSelector==13||MonkeyGameActivity.monkeyGameMenuLetterSelector==14)
+			{
+				MonkeyGameActivity.position[MonkeyGameActivity.aCount] = new Sprite(0, 50 , MonkeyGameActivity.mFaceTextureRegionFish,MonkeyGameActivity.vbo); 
+		
+				MonkeyGameActivity.position[MonkeyGameActivity.aCount].setWidth(MonkeyGameActivity.ImageWidthObjects-22);
+				MonkeyGameActivity.position[MonkeyGameActivity.aCount].setHeight(MonkeyGameActivity.ImageHeightObjects-22);
+			
+				bananaPath = new Path(2).to(MonkeyGameActivity.CAMERA_WIDTH/2, -100).to(MonkeyGameActivity.mFaceCount, MonkeyGameActivity.CAMERA_HEIGHT - MonkeyGameActivity.CAMERA_HEIGHT/3 -20 );
+			}
+			//if letter are toh, kho, u, go, ho
+			else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==19||MonkeyGameActivity.monkeyGameMenuLetterSelector==12||MonkeyGameActivity.monkeyGameMenuLetterSelector==17||
+					MonkeyGameActivity.monkeyGameMenuLetterSelector==10||MonkeyGameActivity.monkeyGameMenuLetterSelector==11)
 			{
 				MonkeyGameActivity.position[MonkeyGameActivity.aCount] = new Sprite(0, 50 , MonkeyGameActivity.mFaceTextureRegionAlien,MonkeyGameActivity.vbo); 
 			
@@ -118,22 +127,31 @@ public class MonkeyFunction
 	public static void monkey1()
 	{
 		//load monkey according to the level
-		if(MonkeyGameActivity.monkeyGameMenuLetterSelector==1)
+		
+		//if letter are mo, aa, lo, ko, to
+		if(MonkeyGameActivity.monkeyGameMenuLetterSelector==1||MonkeyGameActivity.monkeyGameMenuLetterSelector==2||MonkeyGameActivity.monkeyGameMenuLetterSelector==5||
+				MonkeyGameActivity.monkeyGameMenuLetterSelector==8||MonkeyGameActivity.monkeyGameMenuLetterSelector==18)
 		{
 			MonkeyGameActivity.monkey1 = new Sprite(0, 50, MonkeyGameActivity.mFaceTextureRegionMonkeyWithoutBanana,
 					MonkeyGameActivity.vbo);
 		}
-		else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==6)
-		{
-			MonkeyGameActivity.monkey1 = new Sprite(0, 50, MonkeyGameActivity.mFaceTextureRegionMonkeyWithoutFish,
-					MonkeyGameActivity.vbo);
-		}
-		else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==4)
+		//if letter are raw, talibasha, do, a, doh
+		else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==4||MonkeyGameActivity.monkeyGameMenuLetterSelector==7||MonkeyGameActivity.monkeyGameMenuLetterSelector==15||
+				MonkeyGameActivity.monkeyGameMenuLetterSelector==16||MonkeyGameActivity.monkeyGameMenuLetterSelector==20)
 		{
 			MonkeyGameActivity.monkey1 = new Sprite(0, 50, MonkeyGameActivity.mFaceTextureRegionMonkeyWithoutCup,
 					MonkeyGameActivity.vbo);
 		}
-		else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==19)
+		//if letter are bo, no, cho, e, po
+		else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==3||MonkeyGameActivity.monkeyGameMenuLetterSelector==6||MonkeyGameActivity.monkeyGameMenuLetterSelector==9||
+				MonkeyGameActivity.monkeyGameMenuLetterSelector==13||MonkeyGameActivity.monkeyGameMenuLetterSelector==14)
+		{
+			MonkeyGameActivity.monkey1 = new Sprite(0, 50, MonkeyGameActivity.mFaceTextureRegionMonkeyWithoutFish,
+					MonkeyGameActivity.vbo);
+		}
+		//if letter are toh, kho, u, go, ho
+		else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==19||MonkeyGameActivity.monkeyGameMenuLetterSelector==12||MonkeyGameActivity.monkeyGameMenuLetterSelector==17||
+				MonkeyGameActivity.monkeyGameMenuLetterSelector==10||MonkeyGameActivity.monkeyGameMenuLetterSelector==11)
 		{
 			MonkeyGameActivity.monkey1 = new Sprite(0, 50, MonkeyGameActivity.mFaceTextureRegionMonkeyWithoutAlien,
 					MonkeyGameActivity.vbo);
@@ -184,24 +202,34 @@ public class MonkeyFunction
 	public static void monkey2()
 	{
 		//load monkey and reward object according to the level
-		if(MonkeyGameActivity.monkeyGameMenuLetterSelector==1)
+		
+		//if letter are mo, aa, lo, ko, to
+		if(MonkeyGameActivity.monkeyGameMenuLetterSelector==1||MonkeyGameActivity.monkeyGameMenuLetterSelector==2||MonkeyGameActivity.monkeyGameMenuLetterSelector==5||
+				MonkeyGameActivity.monkeyGameMenuLetterSelector==8||MonkeyGameActivity.monkeyGameMenuLetterSelector==18)
 		{
 			MonkeyGameActivity.monkey2 = new Sprite(MonkeyGameActivity.position[MonkeyGameActivity.aCount].getX(), 
 					(float) (MonkeyGameActivity.position[MonkeyGameActivity.aCount].getY()-MonkeyGameActivity.CAMERA_HEIGHT/1.4),
 					MonkeyGameActivity.mFaceTextureRegionMonkeyWithBanana, MonkeyGameActivity.vbo);
 		}
-		else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==6)
+		//if letter are raw, talibasha, do, a, doh
+		else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==4||MonkeyGameActivity.monkeyGameMenuLetterSelector==7||MonkeyGameActivity.monkeyGameMenuLetterSelector==15||
+				MonkeyGameActivity.monkeyGameMenuLetterSelector==16||MonkeyGameActivity.monkeyGameMenuLetterSelector==20)
+		{
+			MonkeyGameActivity.monkey2 = new Sprite(MonkeyGameActivity.position[MonkeyGameActivity.aCount].getX(), 
+					(float) (MonkeyGameActivity.position[MonkeyGameActivity.aCount].getY()-MonkeyGameActivity.CAMERA_HEIGHT/1.4),
+					MonkeyGameActivity.mFaceTextureRegionMonkeyWithCup, MonkeyGameActivity.vbo);
+		}
+		//if letter are bo, no, cho, e, po
+		else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==3||MonkeyGameActivity.monkeyGameMenuLetterSelector==6||MonkeyGameActivity.monkeyGameMenuLetterSelector==9||
+				MonkeyGameActivity.monkeyGameMenuLetterSelector==13||MonkeyGameActivity.monkeyGameMenuLetterSelector==14)
 		{
 			MonkeyGameActivity.monkey2 = new Sprite(MonkeyGameActivity.position[MonkeyGameActivity.aCount].getX(), 
 					(float) (MonkeyGameActivity.position[MonkeyGameActivity.aCount].getY()-MonkeyGameActivity.CAMERA_HEIGHT/1.4),
 					MonkeyGameActivity.mFaceTextureRegionMonkeyWithFish, MonkeyGameActivity.vbo);
 		}
-		else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==4)
-		{
-			MonkeyGameActivity.monkey2 = new Sprite(MonkeyGameActivity.position[MonkeyGameActivity.aCount].getX(), 
-					(float) (MonkeyGameActivity.position[MonkeyGameActivity.aCount].getY()-MonkeyGameActivity.CAMERA_HEIGHT/1.4),
-					MonkeyGameActivity.mFaceTextureRegionMonkeyWithCup, MonkeyGameActivity.vbo);
-		}else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==19)
+		//if letter are toh, kho, u, go, ho
+		else if(MonkeyGameActivity.monkeyGameMenuLetterSelector==19||MonkeyGameActivity.monkeyGameMenuLetterSelector==12||MonkeyGameActivity.monkeyGameMenuLetterSelector==17||
+				MonkeyGameActivity.monkeyGameMenuLetterSelector==10||MonkeyGameActivity.monkeyGameMenuLetterSelector==11)
 		{
 			MonkeyGameActivity.monkey2 = new Sprite(MonkeyGameActivity.position[MonkeyGameActivity.aCount].getX(), 
 					(float) (MonkeyGameActivity.position[MonkeyGameActivity.aCount].getY()-MonkeyGameActivity.CAMERA_HEIGHT/1.4),
