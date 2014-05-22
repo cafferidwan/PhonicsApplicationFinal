@@ -49,7 +49,15 @@ public class MenuPage extends SimpleBaseGameActivity implements IOnSceneTouchLis
 	public static int letterNumber;
 	public int menuLetterBlockSize;
 	
-
+	@Override
+	public void onBackPressed()
+	{
+	   
+//	    BoxGameActivity.super.onBackPressed();
+		finish();
+		startActivity(new Intent(getBaseContext(), GameMainPage.class));
+	}
+	
 	@Override
 	public EngineOptions onCreateEngineOptions() 
 	{
@@ -319,9 +327,9 @@ public class MenuPage extends SimpleBaseGameActivity implements IOnSceneTouchLis
 //			intent.putExtra("val",letterNumber);
 //			startActivity(intent);
 
-//			startActivity(new Intent(getBaseContext(), BoxGameActivity.class));
+			startActivity(new Intent(getBaseContext(), BoxGameActivity.class));
 			
-			startActivity(new Intent(getBaseContext(), MonkeyGameActivity.class));
+//			startActivity(new Intent(getBaseContext(), MonkeyGameActivity.class));
 			finish();
 //		} 
 	}

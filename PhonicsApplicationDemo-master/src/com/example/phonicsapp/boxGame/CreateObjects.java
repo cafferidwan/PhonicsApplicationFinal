@@ -111,7 +111,7 @@ public class CreateObjects
 		
 		
 		//parrot-letter
-		BoxGameActivity.parrotLetter =  new Entity(50,20);
+		BoxGameActivity.parrotLetter =  new Entity(850,20);
 		BoxGameActivity.mScene.attachChild(BoxGameActivity.parrotLetter);
 		
 		BoxGameActivity.mScene.registerTouchArea(BoxGameActivity.letter);

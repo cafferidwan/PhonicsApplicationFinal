@@ -617,7 +617,8 @@ public class BoxGameActivity extends SimpleBaseGameActivity
 	{
 	   
 //	    BoxGameActivity.super.onBackPressed();
-		BoxGameActivity.boxGameActivityInstance.finish();
+		finish();
+		startActivity(new Intent(getBaseContext(), MenuPage.class));
 	}
 	
 	@Override
