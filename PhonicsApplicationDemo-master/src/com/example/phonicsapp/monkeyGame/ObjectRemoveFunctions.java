@@ -16,11 +16,18 @@ public class ObjectRemoveFunctions
 			playAudio(MonkeyGameActivity.wrongObj1Sound);
 			MonkeyGameActivity.mScene.unregisterTouchArea(pTouchArea);
 			MonkeyGameActivity.mScene.detachChild(pTouchArea);
-			GameObjects.fadeOut(MonkeyGameActivity.obj3);
+			
 			GameObjects.fadeOut(MonkeyGameActivity.obj1);
-			GameObjects.fadeOut(MonkeyGameActivity.obj4);
 			GameObjects.fadeOut(MonkeyGameActivity.obj2);
+			GameObjects.fadeOut(MonkeyGameActivity.obj3);
+			GameObjects.fadeOut(MonkeyGameActivity.obj4);
+			GameObjects.fadeOut(MonkeyGameActivity.obj5);
+			GameObjects.fadeOut(MonkeyGameActivity.obj6);
 			GameObjects.fadeOut(MonkeyGameActivity.wrongObj2);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj3);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj4);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj5);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj6);
 
 			if (MonkeyGameActivity.position[MonkeyGameActivity.aCount] == null) 
 			{
@@ -37,11 +44,130 @@ public class ObjectRemoveFunctions
 			playAudio(MonkeyGameActivity.wrongObj2Sound);
 			MonkeyGameActivity.mScene.unregisterTouchArea(pTouchArea);
 			MonkeyGameActivity.mScene.detachChild(pTouchArea);
-			GameObjects.fadeOut(MonkeyGameActivity.obj3);
+			
 			GameObjects.fadeOut(MonkeyGameActivity.obj1);
-			GameObjects.fadeOut(MonkeyGameActivity.obj4);
-			GameObjects.fadeOut(MonkeyGameActivity.wrongObj1);
 			GameObjects.fadeOut(MonkeyGameActivity.obj2);
+			GameObjects.fadeOut(MonkeyGameActivity.obj3);
+			GameObjects.fadeOut(MonkeyGameActivity.obj4);
+			GameObjects.fadeOut(MonkeyGameActivity.obj5);
+			GameObjects.fadeOut(MonkeyGameActivity.obj6);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj1);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj3);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj4);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj5);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj6);
+
+			if (MonkeyGameActivity.position[MonkeyGameActivity.aCount] == null) 
+			{
+
+			}
+			else 
+			{
+				MonkeyGameActivity.value = 1;
+			}
+		}
+		else if ((Sprite) pTouchArea == MonkeyGameActivity.wrongObj3)
+		{
+			MonkeyGameActivity.audioPlay = true;
+			playAudio(MonkeyGameActivity.wrongObj3Sound);
+			MonkeyGameActivity.mScene.unregisterTouchArea(pTouchArea);
+			MonkeyGameActivity.mScene.detachChild(pTouchArea);
+			
+			GameObjects.fadeOut(MonkeyGameActivity.obj1);
+			GameObjects.fadeOut(MonkeyGameActivity.obj2);
+			GameObjects.fadeOut(MonkeyGameActivity.obj3);
+			GameObjects.fadeOut(MonkeyGameActivity.obj4);
+			GameObjects.fadeOut(MonkeyGameActivity.obj5);
+			GameObjects.fadeOut(MonkeyGameActivity.obj6);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj1);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj2);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj4);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj5);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj6);
+
+			if (MonkeyGameActivity.position[MonkeyGameActivity.aCount] == null) 
+			{
+
+			}
+			else 
+			{
+				MonkeyGameActivity.value = 1;
+			}
+		}
+		else if ((Sprite) pTouchArea == MonkeyGameActivity.wrongObj4)
+		{
+			MonkeyGameActivity.audioPlay = true;
+			playAudio(MonkeyGameActivity.wrongObj4Sound);
+			MonkeyGameActivity.mScene.unregisterTouchArea(pTouchArea);
+			MonkeyGameActivity.mScene.detachChild(pTouchArea);
+			
+			GameObjects.fadeOut(MonkeyGameActivity.obj1);
+			GameObjects.fadeOut(MonkeyGameActivity.obj2);
+			GameObjects.fadeOut(MonkeyGameActivity.obj3);
+			GameObjects.fadeOut(MonkeyGameActivity.obj4);
+			GameObjects.fadeOut(MonkeyGameActivity.obj5);
+			GameObjects.fadeOut(MonkeyGameActivity.obj6);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj1);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj2);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj3);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj5);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj6);
+
+			if (MonkeyGameActivity.position[MonkeyGameActivity.aCount] == null) 
+			{
+
+			}
+			else 
+			{
+				MonkeyGameActivity.value = 1;
+			}
+		}
+		else if ((Sprite) pTouchArea == MonkeyGameActivity.wrongObj5)
+		{
+			MonkeyGameActivity.audioPlay = true;
+			playAudio(MonkeyGameActivity.wrongObj5Sound);
+			MonkeyGameActivity.mScene.unregisterTouchArea(pTouchArea);
+			MonkeyGameActivity.mScene.detachChild(pTouchArea);
+			
+			GameObjects.fadeOut(MonkeyGameActivity.obj1);
+			GameObjects.fadeOut(MonkeyGameActivity.obj2);
+			GameObjects.fadeOut(MonkeyGameActivity.obj3);
+			GameObjects.fadeOut(MonkeyGameActivity.obj4);
+			GameObjects.fadeOut(MonkeyGameActivity.obj5);
+			GameObjects.fadeOut(MonkeyGameActivity.obj6);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj1);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj2);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj3);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj4);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj6);
+
+			if (MonkeyGameActivity.position[MonkeyGameActivity.aCount] == null) 
+			{
+
+			}
+			else 
+			{
+				MonkeyGameActivity.value = 1;
+			}
+		}
+		else if ((Sprite) pTouchArea == MonkeyGameActivity.wrongObj6)
+		{
+			MonkeyGameActivity.audioPlay = true;
+			playAudio(MonkeyGameActivity.wrongObj6Sound);
+			MonkeyGameActivity.mScene.unregisterTouchArea(pTouchArea);
+			MonkeyGameActivity.mScene.detachChild(pTouchArea);
+			
+			GameObjects.fadeOut(MonkeyGameActivity.obj1);
+			GameObjects.fadeOut(MonkeyGameActivity.obj2);
+			GameObjects.fadeOut(MonkeyGameActivity.obj3);
+			GameObjects.fadeOut(MonkeyGameActivity.obj4);
+			GameObjects.fadeOut(MonkeyGameActivity.obj5);
+			GameObjects.fadeOut(MonkeyGameActivity.obj6);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj1);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj2);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj3);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj4);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj5);
 
 			if (MonkeyGameActivity.position[MonkeyGameActivity.aCount] == null) 
 			{
@@ -60,11 +186,18 @@ public class ObjectRemoveFunctions
 			MonkeyGameActivity.bananaValue = 1;
 			MonkeyGameActivity.mScene.unregisterTouchArea(pTouchArea);
 			MonkeyGameActivity.mScene.detachChild(pTouchArea);
-			GameObjects.fadeOut(MonkeyGameActivity.obj3);
+			
 			GameObjects.fadeOut(MonkeyGameActivity.obj2);
+			GameObjects.fadeOut(MonkeyGameActivity.obj3);
 			GameObjects.fadeOut(MonkeyGameActivity.obj4);
+			GameObjects.fadeOut(MonkeyGameActivity.obj5);
+			GameObjects.fadeOut(MonkeyGameActivity.obj6);
 			GameObjects.fadeOut(MonkeyGameActivity.wrongObj1);
 			GameObjects.fadeOut(MonkeyGameActivity.wrongObj2);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj3);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj4);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj5);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj6);
 		}
 		else if ((Sprite) pTouchArea == MonkeyGameActivity.obj2) 
 		{
@@ -73,11 +206,18 @@ public class ObjectRemoveFunctions
 			MonkeyGameActivity.bananaValue = 1;
 			MonkeyGameActivity.mScene.unregisterTouchArea(pTouchArea);
 			MonkeyGameActivity.mScene.detachChild(pTouchArea);
-			GameObjects.fadeOut(MonkeyGameActivity.obj3);
+		
 			GameObjects.fadeOut(MonkeyGameActivity.obj1);
+			GameObjects.fadeOut(MonkeyGameActivity.obj3);
 			GameObjects.fadeOut(MonkeyGameActivity.obj4);
+			GameObjects.fadeOut(MonkeyGameActivity.obj5);
+			GameObjects.fadeOut(MonkeyGameActivity.obj6);
 			GameObjects.fadeOut(MonkeyGameActivity.wrongObj1);
 			GameObjects.fadeOut(MonkeyGameActivity.wrongObj2);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj3);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj4);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj5);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj6);
 		} 
 		else if ((Sprite) pTouchArea == MonkeyGameActivity.obj3) 
 		{
@@ -86,11 +226,19 @@ public class ObjectRemoveFunctions
 			MonkeyGameActivity.bananaValue = 1;
 			MonkeyGameActivity.mScene.unregisterTouchArea(pTouchArea);
 			MonkeyGameActivity.mScene.detachChild(pTouchArea);
-			GameObjects.fadeOut(MonkeyGameActivity.obj2);
+	
+
 			GameObjects.fadeOut(MonkeyGameActivity.obj1);
+			GameObjects.fadeOut(MonkeyGameActivity.obj2);
 			GameObjects.fadeOut(MonkeyGameActivity.obj4);
+			GameObjects.fadeOut(MonkeyGameActivity.obj5);
+			GameObjects.fadeOut(MonkeyGameActivity.obj6);
 			GameObjects.fadeOut(MonkeyGameActivity.wrongObj1);
 			GameObjects.fadeOut(MonkeyGameActivity.wrongObj2);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj3);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj4);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj5);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj6);
 		} 
 		else if ((Sprite) pTouchArea == MonkeyGameActivity.obj4) 
 		{
@@ -99,12 +247,60 @@ public class ObjectRemoveFunctions
 			MonkeyGameActivity.bananaValue = 1;
 			MonkeyGameActivity.mScene.unregisterTouchArea(pTouchArea);
 			MonkeyGameActivity.mScene.detachChild(pTouchArea);
-			GameObjects.fadeOut(MonkeyGameActivity.obj3);
+	
 			GameObjects.fadeOut(MonkeyGameActivity.obj1);
 			GameObjects.fadeOut(MonkeyGameActivity.obj2);
+			GameObjects.fadeOut(MonkeyGameActivity.obj3);
+			GameObjects.fadeOut(MonkeyGameActivity.obj5);
+			GameObjects.fadeOut(MonkeyGameActivity.obj6);
 			GameObjects.fadeOut(MonkeyGameActivity.wrongObj1);
 			GameObjects.fadeOut(MonkeyGameActivity.wrongObj2);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj3);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj4);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj5);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj6);
 		}
+		else if ((Sprite) pTouchArea == MonkeyGameActivity.obj5) 
+		{
+			MonkeyGameActivity.audioPlay = true;
+			playAudio(MonkeyGameActivity.obj4Sound);
+			MonkeyGameActivity.bananaValue = 1;
+			MonkeyGameActivity.mScene.unregisterTouchArea(pTouchArea);
+			MonkeyGameActivity.mScene.detachChild(pTouchArea);
+	
+			GameObjects.fadeOut(MonkeyGameActivity.obj1);
+			GameObjects.fadeOut(MonkeyGameActivity.obj2);
+			GameObjects.fadeOut(MonkeyGameActivity.obj3);
+			GameObjects.fadeOut(MonkeyGameActivity.obj4);
+			GameObjects.fadeOut(MonkeyGameActivity.obj6);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj1);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj2);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj3);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj4);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj5);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj6);
+		}
+		else if ((Sprite) pTouchArea == MonkeyGameActivity.obj6) 
+		{
+			MonkeyGameActivity.audioPlay = true;
+			playAudio(MonkeyGameActivity.obj4Sound);
+			MonkeyGameActivity.bananaValue = 1;
+			MonkeyGameActivity.mScene.unregisterTouchArea(pTouchArea);
+			MonkeyGameActivity.mScene.detachChild(pTouchArea);
+	
+			GameObjects.fadeOut(MonkeyGameActivity.obj1);
+			GameObjects.fadeOut(MonkeyGameActivity.obj2);
+			GameObjects.fadeOut(MonkeyGameActivity.obj3);
+			GameObjects.fadeOut(MonkeyGameActivity.obj4);
+			GameObjects.fadeOut(MonkeyGameActivity.obj5);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj1);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj2);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj3);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj4);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj5);
+			GameObjects.fadeOut(MonkeyGameActivity.wrongObj6);
+		}
+		
 	}
 
 	// Audio play Function

@@ -327,9 +327,9 @@ public class MenuPage extends SimpleBaseGameActivity implements IOnSceneTouchLis
 //			intent.putExtra("val",letterNumber);
 //			startActivity(intent);
 
-			startActivity(new Intent(getBaseContext(), BoxGameActivity.class));
+//			startActivity(new Intent(getBaseContext(), BoxGameActivity.class));
 			
-//			startActivity(new Intent(getBaseContext(), MonkeyGameActivity.class));
+			startActivity(new Intent(getBaseContext(), MonkeyGameActivity.class));
 			finish();
 //		} 
 	}

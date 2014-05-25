@@ -20,8 +20,8 @@ public class MonkeyGameTimerHandlers
 						// Loading the Objects according to the game letter
 						LoadObject.LoadObjects(MonkeyGameActivity.monkeyGameMenuLetterSelector);
 
-						MonkeyGameActivity.randomItem = (int) (Math.random() * 6);
-						MonkeyGameActivity.randomItem1 = (int) (Math.random() * 6);
+						MonkeyGameActivity.randomItem = (int) (Math.random() * 12);
+						MonkeyGameActivity.randomItem1 = (int) (Math.random() * 12);
 						if (MonkeyGameActivity.randomItem == MonkeyGameActivity.randomItem1)
 						{
 							MonkeyGameActivity.randomItem1 = MonkeyGameActivity.randomItem1 + 2;
@@ -136,22 +136,46 @@ public class MonkeyGameTimerHandlers
 		case 1:
 			GameObjects.wrongObj2(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 1);
 			break;
-
+			
 		case 2:
-			GameObjects.obj1(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 1);
+			GameObjects.wrongObj3(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 1);
 			break;
 
 		case 3:
+			GameObjects.wrongObj4(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 1);
+			break;
+		
+		case 4:
+			GameObjects.wrongObj5(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 1);
+			break;
+		
+		case 5:
+			GameObjects.wrongObj6(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 1);
+			break;	
+		case 6:
+			GameObjects.obj1(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 1);
+			break;
+
+		case 7:
 			GameObjects.obj2(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 1);
 			break;
 
-		case 4:
+		case 8:
 			GameObjects.obj3(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 1);
 			break;
 
-		case 5:
+		case 9:
 			GameObjects.obj4(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 1);
 			break;
+
+		case 10:
+			GameObjects.obj5(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 1);
+			break;
+	
+		case 11:
+			GameObjects.obj6(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 1);
+			break;
+
 
 		default:
 			// GameObjects.obj3(2,1);
@@ -167,21 +191,45 @@ public class MonkeyGameTimerHandlers
 		case 1:
 			GameObjects.wrongObj2(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 2);
 			break;
-
+		
 		case 2:
-			GameObjects.obj1(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 2);
+			GameObjects.wrongObj3(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 2);
 			break;
 
 		case 3:
-			GameObjects.obj2(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 2);
+			GameObjects.wrongObj4(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 2);
 			break;
 
 		case 4:
-			GameObjects.obj3(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 2);
+			GameObjects.wrongObj5(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 2);
 			break;
 
 		case 5:
+			GameObjects.wrongObj6(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 2);
+			break;
+			
+		case 6:
+			GameObjects.obj1(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 2);
+			break;
+
+		case 7:
+			GameObjects.obj2(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 2);
+			break;
+
+		case 8:
+			GameObjects.obj3(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 2);
+			break;
+
+		case 9:
 			GameObjects.obj4(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 2);
+			break;
+		
+		case 10:
+			GameObjects.obj5(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 2);
+			break;
+
+		case 11:
+			GameObjects.obj6(MonkeyGameActivity.monkeyGameLevelSelector1[MonkeyGameActivity.monkeyGameMenuLetterSelector], 2);
 			break;
 
 		default:

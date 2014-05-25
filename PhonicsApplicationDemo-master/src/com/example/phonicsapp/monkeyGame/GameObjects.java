@@ -432,6 +432,172 @@ public class GameObjects
 		
 	}
 	
+	public static void obj5(int level, int number)
+	{
+		Path obj5Path = null;
+		
+		if(level == 0)
+		{
+			if(number == 1)
+			{
+				ax = -150;
+				ay = MonkeyGameActivity.CAMERA_HEIGHT/2 - 20;
+				
+				bx = MonkeyGameActivity.CAMERA_WIDTH+20;
+				by = MonkeyGameActivity.CAMERA_HEIGHT/2 - 20;
+			}
+			else if(number == 2)
+			{
+				ax = MonkeyGameActivity.CAMERA_WIDTH+20;
+				ay = MonkeyGameActivity.CAMERA_HEIGHT/2 - 170;
+				
+				bx = -150;
+				by = MonkeyGameActivity.CAMERA_HEIGHT/2 - 170;
+			}
+			obj5Path = new Path(2).to(ax, ay ).to(bx, by);
+		}
+		else if(level == 1)
+		{
+			if(number == 1)
+			{
+				obj5Path = new Path(5).to(-20,0).to(MonkeyGameActivity.CAMERA_WIDTH/4, MonkeyGameActivity.CAMERA_HEIGHT/2).
+						to(MonkeyGameActivity.CAMERA_WIDTH/2, 0).to(MonkeyGameActivity.CAMERA_WIDTH*(4/3),MonkeyGameActivity.CAMERA_HEIGHT/2).
+						to(MonkeyGameActivity.CAMERA_WIDTH+20, 0);
+			}
+			else if(number == 2)
+			{
+				obj5Path = new Path(5).to(MonkeyGameActivity.CAMERA_WIDTH+20,MonkeyGameActivity.CAMERA_HEIGHT/2).to(MonkeyGameActivity.CAMERA_WIDTH*(4/3), 0).
+						to(MonkeyGameActivity.CAMERA_WIDTH/2, MonkeyGameActivity.CAMERA_HEIGHT/2).to(MonkeyGameActivity.CAMERA_WIDTH /4, 0).
+						to(-20, MonkeyGameActivity.CAMERA_HEIGHT/2);
+			}
+		}
+		
+		MonkeyGameActivity.mScene.attachChild(MonkeyGameActivity.obj5);
+		MonkeyGameActivity.mScene.registerTouchArea(MonkeyGameActivity.obj5);
+		MonkeyGameActivity.obj5.setScale((float) MonkeyGameActivity.monkeyGameObjectScale);
+//		MonkeyGameActivity.obj5.setWidth(MonkeyGameActivity.ImageWidthObjects);
+//		MonkeyGameActivity.obj5.setHeight(MonkeyGameActivity.ImageHeightObjects);
+		
+		MonkeyGameActivity.obj5.registerEntityModifier(new PathModifier(4, obj5Path, null, new IPathModifierListener() 
+		{
+			@Override
+			public void onPathStarted(final PathModifier pPathModifier, final IEntity pEntity)
+			{
+				//Debug.d("onPathStarted");
+			}
+
+			@Override
+			public void onPathWaypointStarted(final PathModifier pPathModifier, final IEntity pEntity, final int pWaypointIndex) 
+			{
+				//Debug.d("onPathWaypointStarted:  " + pWaypointIndex);
+				
+			}
+
+			@Override
+			public void onPathWaypointFinished(final PathModifier pPathModifier, final IEntity pEntity, final int pWaypointIndex)
+			{
+				//Debug.d("onPathWaypointFinished: " + pWaypointIndex);
+			}
+
+			@Override
+			public void onPathFinished(final PathModifier pPathModifier, final IEntity pEntity)
+			{
+				//Debug.d("onPathFinished");
+				//MonkeyGameActivity.mScene.detachChild(MonkeyGameActivity.obj5);
+				MonkeyGameActivity.obj5.setVisible(false);
+				new Runnable() {
+					public void run() 
+					{
+						MonkeyGameActivity.mScene.detachChild(MonkeyGameActivity.obj5);
+					}
+				};
+			}
+		}, EaseSineInOut.getInstance()));
+		
+	}
+	public static void obj6(int level, int number)
+	{
+		Path obj6Path = null;
+		
+		if(level == 0)
+		{
+			if(number == 1)
+			{
+				ax = -150;
+				ay = MonkeyGameActivity.CAMERA_HEIGHT/2 - 20;
+				
+				bx = MonkeyGameActivity.CAMERA_WIDTH+20;
+				by = MonkeyGameActivity.CAMERA_HEIGHT/2 - 20;
+			}
+			else if(number == 2)
+			{
+				ax = MonkeyGameActivity.CAMERA_WIDTH+20;
+				ay = MonkeyGameActivity.CAMERA_HEIGHT/2 - 170;
+				
+				bx = -150;
+				by = MonkeyGameActivity.CAMERA_HEIGHT/2 - 170;
+			}
+			obj6Path = new Path(2).to(ax, ay ).to(bx, by);
+		}
+		else if(level == 1)
+		{
+			if(number == 1)
+			{
+				obj6Path = new Path(5).to(-20,0).to(MonkeyGameActivity.CAMERA_WIDTH/4, MonkeyGameActivity.CAMERA_HEIGHT/2).
+						to(MonkeyGameActivity.CAMERA_WIDTH/2, 0).to(MonkeyGameActivity.CAMERA_WIDTH*(4/3),MonkeyGameActivity.CAMERA_HEIGHT/2).
+						to(MonkeyGameActivity.CAMERA_WIDTH+20, 0);
+			}
+			else if(number == 2)
+			{
+				obj6Path = new Path(5).to(MonkeyGameActivity.CAMERA_WIDTH+20,MonkeyGameActivity.CAMERA_HEIGHT/2).to(MonkeyGameActivity.CAMERA_WIDTH*(4/3), 0).
+						to(MonkeyGameActivity.CAMERA_WIDTH/2, MonkeyGameActivity.CAMERA_HEIGHT/2).to(MonkeyGameActivity.CAMERA_WIDTH /4, 0).
+						to(-20, MonkeyGameActivity.CAMERA_HEIGHT/2);
+			}
+		}
+		
+		MonkeyGameActivity.mScene.attachChild(MonkeyGameActivity.obj6);
+		MonkeyGameActivity.mScene.registerTouchArea(MonkeyGameActivity.obj6);
+		MonkeyGameActivity.obj6.setScale((float) MonkeyGameActivity.monkeyGameObjectScale);
+//		MonkeyGameActivity.obj6.setWidth(MonkeyGameActivity.ImageWidthObjects);
+//		MonkeyGameActivity.obj6.setHeight(MonkeyGameActivity.ImageHeightObjects);
+		
+		MonkeyGameActivity.obj6.registerEntityModifier(new PathModifier(4, obj6Path, null, new IPathModifierListener() 
+		{
+			@Override
+			public void onPathStarted(final PathModifier pPathModifier, final IEntity pEntity)
+			{
+				//Debug.d("onPathStarted");
+			}
+
+			@Override
+			public void onPathWaypointStarted(final PathModifier pPathModifier, final IEntity pEntity, final int pWaypointIndex) 
+			{
+				//Debug.d("onPathWaypointStarted:  " + pWaypointIndex);
+				
+			}
+
+			@Override
+			public void onPathWaypointFinished(final PathModifier pPathModifier, final IEntity pEntity, final int pWaypointIndex)
+			{
+				//Debug.d("onPathWaypointFinished: " + pWaypointIndex);
+			}
+
+			@Override
+			public void onPathFinished(final PathModifier pPathModifier, final IEntity pEntity)
+			{
+				//Debug.d("onPathFinished");
+				//MonkeyGameActivity.mScene.detachChild(MonkeyGameActivity.obj6);
+				MonkeyGameActivity.obj6.setVisible(false);
+				new Runnable() {
+					public void run() 
+					{
+						MonkeyGameActivity.mScene.detachChild(MonkeyGameActivity.obj6);
+					}
+				};
+			}
+		}, EaseSineInOut.getInstance()));
+		
+	}
 	public static void wrongObj1(int level, int number)
 	{
 		Path wrongObj1Path = null;
@@ -594,6 +760,340 @@ public class GameObjects
 					public void run()
 					{
 						MonkeyGameActivity.mScene.detachChild(MonkeyGameActivity.wrongObj2);
+					}
+				};
+			}
+		}, EaseSineInOut.getInstance()));
+		
+	}
+	
+	public static void wrongObj3(int level, int number)
+	{
+	Path wrongObj3Path = null;
+		
+		if(level == 0)
+		{
+			if(number == 1)
+			{
+				ax = -150;
+				ay = MonkeyGameActivity.CAMERA_HEIGHT/2 - 20;
+				
+				bx = MonkeyGameActivity.CAMERA_WIDTH+20;
+				by = MonkeyGameActivity.CAMERA_HEIGHT/2 - 20;
+			}
+			else if(number == 2)
+			{
+				ax = MonkeyGameActivity.CAMERA_WIDTH+20;
+				ay = MonkeyGameActivity.CAMERA_HEIGHT/2 - 170;
+				
+				bx = -150;
+				by = MonkeyGameActivity.CAMERA_HEIGHT/2 - 170;
+			}
+			wrongObj3Path = new Path(2).to(ax, ay ).to(bx, by);
+		}
+		else if(level == 1)
+		{
+			if(number == 1)
+			{
+				wrongObj3Path = new Path(5).to(-20,0).to(MonkeyGameActivity.CAMERA_WIDTH/4, MonkeyGameActivity.CAMERA_HEIGHT/2).
+						to(MonkeyGameActivity.CAMERA_WIDTH/2, 0).to(MonkeyGameActivity.CAMERA_WIDTH*(4/3),MonkeyGameActivity.CAMERA_HEIGHT/2).
+						to(MonkeyGameActivity.CAMERA_WIDTH+20, 0);
+			}
+			else if(number == 2)
+			{
+				wrongObj3Path = new Path(5).to(MonkeyGameActivity.CAMERA_WIDTH+20,MonkeyGameActivity.CAMERA_HEIGHT/2).to(MonkeyGameActivity.CAMERA_WIDTH*(4/3), 0).
+						to(MonkeyGameActivity.CAMERA_WIDTH/2, MonkeyGameActivity.CAMERA_HEIGHT/2).to(MonkeyGameActivity.CAMERA_WIDTH /4, 0).
+						to(-20, MonkeyGameActivity.CAMERA_HEIGHT/2);
+			}
+		}
+		
+		MonkeyGameActivity.mScene.attachChild(MonkeyGameActivity.wrongObj3);
+		MonkeyGameActivity.mScene.registerTouchArea(MonkeyGameActivity.wrongObj3);
+		MonkeyGameActivity.wrongObj3.setScale((float) MonkeyGameActivity.monkeyGameObjectScale);
+//		MonkeyGameActivity.wrongObj3.setWidth(MonkeyGameActivity.ImageWidthObjects);
+//		MonkeyGameActivity.wrongObj3.setHeight(MonkeyGameActivity.ImageHeightObjects);
+		
+		MonkeyGameActivity.wrongObj3.registerEntityModifier(new PathModifier(4, wrongObj3Path, null, new IPathModifierListener() 
+		{
+			@Override
+			public void onPathStarted(final PathModifier pPathModifier, final IEntity pEntity) 
+			{
+				//Debug.d("onPathStarted");
+			}
+
+			@Override
+			public void onPathWaypointStarted(final PathModifier pPathModifier, final IEntity pEntity, final int pWaypointIndex) 
+			{
+				//Debug.d("onPathWaypointStarted:  " + pWaypointIndex);
+				
+			}
+
+			@Override
+			public void onPathWaypointFinished(final PathModifier pPathModifier, final IEntity pEntity, final int pWaypointIndex) 
+			{
+				//Debug.d("onPathWaypointFinished: " + pWaypointIndex);
+			}
+
+			@Override
+			public void onPathFinished(final PathModifier pPathModifier, final IEntity pEntity) 
+			{
+				//Debug.d("onPathFinished");
+				MonkeyGameActivity.wrongObj3.setVisible(false);
+				new Runnable() 
+				{
+					public void run()
+					{
+						MonkeyGameActivity.mScene.detachChild(MonkeyGameActivity.wrongObj3);
+					}
+				};
+			}
+		}, EaseSineInOut.getInstance()));
+		
+	}
+	
+	public static void wrongObj4(int level, int number)
+	{
+	Path wrongObj4Path = null;
+		
+		if(level == 0)
+		{
+			if(number == 1)
+			{
+				ax = -150;
+				ay = MonkeyGameActivity.CAMERA_HEIGHT/2 - 20;
+				
+				bx = MonkeyGameActivity.CAMERA_WIDTH+20;
+				by = MonkeyGameActivity.CAMERA_HEIGHT/2 - 20;
+			}
+			else if(number == 2)
+			{
+				ax = MonkeyGameActivity.CAMERA_WIDTH+20;
+				ay = MonkeyGameActivity.CAMERA_HEIGHT/2 - 170;
+				
+				bx = -150;
+				by = MonkeyGameActivity.CAMERA_HEIGHT/2 - 170;
+			}
+			wrongObj4Path = new Path(2).to(ax, ay ).to(bx, by);
+		}
+		else if(level == 1)
+		{
+			if(number == 1)
+			{
+				wrongObj4Path = new Path(5).to(-20,0).to(MonkeyGameActivity.CAMERA_WIDTH/4, MonkeyGameActivity.CAMERA_HEIGHT/2).
+						to(MonkeyGameActivity.CAMERA_WIDTH/2, 0).to(MonkeyGameActivity.CAMERA_WIDTH*(4/3),MonkeyGameActivity.CAMERA_HEIGHT/2).
+						to(MonkeyGameActivity.CAMERA_WIDTH+20, 0);
+			}
+			else if(number == 2)
+			{
+				wrongObj4Path = new Path(5).to(MonkeyGameActivity.CAMERA_WIDTH+20,MonkeyGameActivity.CAMERA_HEIGHT/2).to(MonkeyGameActivity.CAMERA_WIDTH*(4/3), 0).
+						to(MonkeyGameActivity.CAMERA_WIDTH/2, MonkeyGameActivity.CAMERA_HEIGHT/2).to(MonkeyGameActivity.CAMERA_WIDTH /4, 0).
+						to(-20, MonkeyGameActivity.CAMERA_HEIGHT/2);
+			}
+		}
+		
+		MonkeyGameActivity.mScene.attachChild(MonkeyGameActivity.wrongObj4);
+		MonkeyGameActivity.mScene.registerTouchArea(MonkeyGameActivity.wrongObj4);
+		MonkeyGameActivity.wrongObj4.setScale((float) MonkeyGameActivity.monkeyGameObjectScale);
+//		MonkeyGameActivity.wrongObj4.setWidth(MonkeyGameActivity.ImageWidthObjects);
+//		MonkeyGameActivity.wrongObj4.setHeight(MonkeyGameActivity.ImageHeightObjects);
+		
+		MonkeyGameActivity.wrongObj4.registerEntityModifier(new PathModifier(4, wrongObj4Path, null, new IPathModifierListener() 
+		{
+			@Override
+			public void onPathStarted(final PathModifier pPathModifier, final IEntity pEntity) 
+			{
+				//Debug.d("onPathStarted");
+			}
+
+			@Override
+			public void onPathWaypointStarted(final PathModifier pPathModifier, final IEntity pEntity, final int pWaypointIndex) 
+			{
+				//Debug.d("onPathWaypointStarted:  " + pWaypointIndex);
+				
+			}
+
+			@Override
+			public void onPathWaypointFinished(final PathModifier pPathModifier, final IEntity pEntity, final int pWaypointIndex) 
+			{
+				//Debug.d("onPathWaypointFinished: " + pWaypointIndex);
+			}
+
+			@Override
+			public void onPathFinished(final PathModifier pPathModifier, final IEntity pEntity) 
+			{
+				//Debug.d("onPathFinished");
+				MonkeyGameActivity.wrongObj4.setVisible(false);
+				new Runnable() 
+				{
+					public void run()
+					{
+						MonkeyGameActivity.mScene.detachChild(MonkeyGameActivity.wrongObj4);
+					}
+				};
+			}
+		}, EaseSineInOut.getInstance()));
+		
+	}
+	public static void wrongObj5(int level, int number)
+	{
+	Path wrongObj5Path = null;
+		
+		if(level == 0)
+		{
+			if(number == 1)
+			{
+				ax = -150;
+				ay = MonkeyGameActivity.CAMERA_HEIGHT/2 - 20;
+				
+				bx = MonkeyGameActivity.CAMERA_WIDTH+20;
+				by = MonkeyGameActivity.CAMERA_HEIGHT/2 - 20;
+			}
+			else if(number == 2)
+			{
+				ax = MonkeyGameActivity.CAMERA_WIDTH+20;
+				ay = MonkeyGameActivity.CAMERA_HEIGHT/2 - 170;
+				
+				bx = -150;
+				by = MonkeyGameActivity.CAMERA_HEIGHT/2 - 170;
+			}
+			wrongObj5Path = new Path(2).to(ax, ay ).to(bx, by);
+		}
+		else if(level == 1)
+		{
+			if(number == 1)
+			{
+				wrongObj5Path = new Path(5).to(-20,0).to(MonkeyGameActivity.CAMERA_WIDTH/4, MonkeyGameActivity.CAMERA_HEIGHT/2).
+						to(MonkeyGameActivity.CAMERA_WIDTH/2, 0).to(MonkeyGameActivity.CAMERA_WIDTH*(4/3),MonkeyGameActivity.CAMERA_HEIGHT/2).
+						to(MonkeyGameActivity.CAMERA_WIDTH+20, 0);
+			}
+			else if(number == 2)
+			{
+				wrongObj5Path = new Path(5).to(MonkeyGameActivity.CAMERA_WIDTH+20,MonkeyGameActivity.CAMERA_HEIGHT/2).to(MonkeyGameActivity.CAMERA_WIDTH*(4/3), 0).
+						to(MonkeyGameActivity.CAMERA_WIDTH/2, MonkeyGameActivity.CAMERA_HEIGHT/2).to(MonkeyGameActivity.CAMERA_WIDTH /4, 0).
+						to(-20, MonkeyGameActivity.CAMERA_HEIGHT/2);
+			}
+		}
+		
+		MonkeyGameActivity.mScene.attachChild(MonkeyGameActivity.wrongObj5);
+		MonkeyGameActivity.mScene.registerTouchArea(MonkeyGameActivity.wrongObj5);
+		MonkeyGameActivity.wrongObj5.setScale((float) MonkeyGameActivity.monkeyGameObjectScale);
+//		MonkeyGameActivity.wrongObj5.setWidth(MonkeyGameActivity.ImageWidthObjects);
+//		MonkeyGameActivity.wrongObj5.setHeight(MonkeyGameActivity.ImageHeightObjects);
+		
+		MonkeyGameActivity.wrongObj5.registerEntityModifier(new PathModifier(4, wrongObj5Path, null, new IPathModifierListener() 
+		{
+			@Override
+			public void onPathStarted(final PathModifier pPathModifier, final IEntity pEntity) 
+			{
+				//Debug.d("onPathStarted");
+			}
+
+			@Override
+			public void onPathWaypointStarted(final PathModifier pPathModifier, final IEntity pEntity, final int pWaypointIndex) 
+			{
+				//Debug.d("onPathWaypointStarted:  " + pWaypointIndex);
+				
+			}
+
+			@Override
+			public void onPathWaypointFinished(final PathModifier pPathModifier, final IEntity pEntity, final int pWaypointIndex) 
+			{
+				//Debug.d("onPathWaypointFinished: " + pWaypointIndex);
+			}
+
+			@Override
+			public void onPathFinished(final PathModifier pPathModifier, final IEntity pEntity) 
+			{
+				//Debug.d("onPathFinished");
+				MonkeyGameActivity.wrongObj5.setVisible(false);
+				new Runnable() 
+				{
+					public void run()
+					{
+						MonkeyGameActivity.mScene.detachChild(MonkeyGameActivity.wrongObj5);
+					}
+				};
+			}
+		}, EaseSineInOut.getInstance()));
+		
+	}
+	public static void wrongObj6(int level, int number)
+	{
+	Path wrongObj6Path = null;
+		
+		if(level == 0)
+		{
+			if(number == 1)
+			{
+				ax = -150;
+				ay = MonkeyGameActivity.CAMERA_HEIGHT/2 - 20;
+				
+				bx = MonkeyGameActivity.CAMERA_WIDTH+20;
+				by = MonkeyGameActivity.CAMERA_HEIGHT/2 - 20;
+			}
+			else if(number == 2)
+			{
+				ax = MonkeyGameActivity.CAMERA_WIDTH+20;
+				ay = MonkeyGameActivity.CAMERA_HEIGHT/2 - 170;
+				
+				bx = -150;
+				by = MonkeyGameActivity.CAMERA_HEIGHT/2 - 170;
+			}
+			wrongObj6Path = new Path(2).to(ax, ay ).to(bx, by);
+		}
+		else if(level == 1)
+		{
+			if(number == 1)
+			{
+				wrongObj6Path = new Path(5).to(-20,0).to(MonkeyGameActivity.CAMERA_WIDTH/4, MonkeyGameActivity.CAMERA_HEIGHT/2).
+						to(MonkeyGameActivity.CAMERA_WIDTH/2, 0).to(MonkeyGameActivity.CAMERA_WIDTH*(4/3),MonkeyGameActivity.CAMERA_HEIGHT/2).
+						to(MonkeyGameActivity.CAMERA_WIDTH+20, 0);
+			}
+			else if(number == 2)
+			{
+				wrongObj6Path = new Path(5).to(MonkeyGameActivity.CAMERA_WIDTH+20,MonkeyGameActivity.CAMERA_HEIGHT/2).to(MonkeyGameActivity.CAMERA_WIDTH*(4/3), 0).
+						to(MonkeyGameActivity.CAMERA_WIDTH/2, MonkeyGameActivity.CAMERA_HEIGHT/2).to(MonkeyGameActivity.CAMERA_WIDTH /4, 0).
+						to(-20, MonkeyGameActivity.CAMERA_HEIGHT/2);
+			}
+		}
+		
+		MonkeyGameActivity.mScene.attachChild(MonkeyGameActivity.wrongObj6);
+		MonkeyGameActivity.mScene.registerTouchArea(MonkeyGameActivity.wrongObj6);
+		MonkeyGameActivity.wrongObj6.setScale((float) MonkeyGameActivity.monkeyGameObjectScale);
+//		MonkeyGameActivity.wrongObj6.setWidth(MonkeyGameActivity.ImageWidthObjects);
+//		MonkeyGameActivity.wrongObj6.setHeight(MonkeyGameActivity.ImageHeightObjects);
+		
+		MonkeyGameActivity.wrongObj6.registerEntityModifier(new PathModifier(4, wrongObj6Path, null, new IPathModifierListener() 
+		{
+			@Override
+			public void onPathStarted(final PathModifier pPathModifier, final IEntity pEntity) 
+			{
+				//Debug.d("onPathStarted");
+			}
+
+			@Override
+			public void onPathWaypointStarted(final PathModifier pPathModifier, final IEntity pEntity, final int pWaypointIndex) 
+			{
+				//Debug.d("onPathWaypointStarted:  " + pWaypointIndex);
+				
+			}
+
+			@Override
+			public void onPathWaypointFinished(final PathModifier pPathModifier, final IEntity pEntity, final int pWaypointIndex) 
+			{
+				//Debug.d("onPathWaypointFinished: " + pWaypointIndex);
+			}
+
+			@Override
+			public void onPathFinished(final PathModifier pPathModifier, final IEntity pEntity) 
+			{
+				//Debug.d("onPathFinished");
+				MonkeyGameActivity.wrongObj6.setVisible(false);
+				new Runnable() 
+				{
+					public void run()
+					{
+						MonkeyGameActivity.mScene.detachChild(MonkeyGameActivity.wrongObj6);
 					}
 				};
 			}
