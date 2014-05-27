@@ -514,7 +514,7 @@ public class LoadObject
 			MonkeyGameActivity.wrongObj5Sound = R.raw.mama;
 			MonkeyGameActivity.wrongObj6Sound = R.raw.tebil;
 		}
-		//
+		//U
 		else if(i == 17)
 		{
 			MonkeyGameActivity.obj1 = new Sprite(0, 0, MonkeyGameActivity.mFaceTextureRegionU1, MonkeyGameActivity.vbo);
