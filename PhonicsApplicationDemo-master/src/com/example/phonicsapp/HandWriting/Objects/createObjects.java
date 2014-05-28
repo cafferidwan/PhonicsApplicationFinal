@@ -11,27 +11,7 @@ import com.example.phonicsapp.R;
 import com.example.phonicsapp.HandWriting.Animation.AnimationDrawTutorial;
 import com.example.phonicsapp.HandWriting.Animation.MonkeyTutorial;
 import com.example.phonicsapp.HandWriting.Duster.Duster;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureA;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureAakar;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureAkar;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureBo;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureCho;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureDo;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureDoh;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureEkar;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureGo;
 import com.example.phonicsapp.HandWriting.Letters.LetterStructureHo;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureKho;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureLo;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureMo;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureNo;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructurePo;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureRaw;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureTalibaSha;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureTo;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureToh;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureU;
-import com.example.phonicsapp.HandWriting.Letters.LetterStructureUkar;
 import com.example.phonicsapp.HandWriting.banglaletterwriting.GameActivity;
 import com.example.phonicsapp.HandWriting.banglaletterwriting.HandWritingMenu;
 import com.example.phonicsapp.HandWriting.banglaletterwriting.NumberSprites;
@@ -678,50 +658,50 @@ public class createObjects
 				//set the animation time
 				AnimationDrawTutorial.setAnimatedChalkTime(2.5, 5, 2, 4);
 				
-//				GameActivity.mScene.registerUpdateHandler(new TimerHandler(5, new ITimerCallback() 
-//				{
-//					@Override
-//					public void onTimePassed(TimerHandler pTimerHandler) 
-//					{
-//						// TODO Auto-generated method stub
-//						//MonkeyTutorial start 
-//						MonkeyTutorial.monkeyTutorialstart(2,
-//								GameActivity.moOutLineX - 28,
-//								GameActivity.moOutLineY - 35,
-//								GameActivity.moOutLineX + 202,
-//								GameActivity.moOutLineY - 35,
-//
-//								GameActivity.moOutLineX+75, GameActivity.moOutLineY+25,
-//								GameActivity.moOutLineX+43, GameActivity.moOutLineY+52, 
-//								GameActivity.moOutLineX+38, GameActivity.moOutLineY+21,
-//								GameActivity.moOutLineX+84, GameActivity.moOutLineY+1,
-//								GameActivity.moOutLineX+117, GameActivity.moOutLineY+12,
-//								GameActivity.moOutLineX+143, GameActivity.moOutLineY+43,
-//								GameActivity.moOutLineX+137, GameActivity.moOutLineY+93,
-//								GameActivity.moOutLineX+62, GameActivity.moOutLineY+112,
-//								GameActivity.moOutLineX+18, GameActivity.moOutLineY+110, 
-//								GameActivity.moOutLineX+83, GameActivity.moOutLineY+144, 
-//								GameActivity.moOutLineX+144, GameActivity.moOutLineY+182, 
-//								GameActivity.moOutLineX+190, GameActivity.moOutLineY+223, 
-//								GameActivity.moOutLineX+190, GameActivity.moOutLineY+223, 
-//								
-//								//no need
-//								GameActivity.moOutLineX+142, GameActivity.moOutLineY-48, 
-//								GameActivity.moOutLineX+142, GameActivity.moOutLineY+208, 
-//								GameActivity.moOutLineX+142, GameActivity.moOutLineY+208,
-//								GameActivity.moOutLineX+142, GameActivity.moOutLineY+208,
-//								
-//								GameActivity.moOutLineX+142, GameActivity.moOutLineY-20,
-//								GameActivity.moOutLineX+165, GameActivity.moOutLineY-20
-//								); 
-//						
-//						// play sound
-//						GameActivity.audioPlay = true;
-//						NumberSprites.playAudio(R.raw.hw_ho);
-//					}
-//				}));
+				GameActivity.mScene.registerUpdateHandler(new TimerHandler(5, new ITimerCallback() 
+				{
+					@Override
+					public void onTimePassed(TimerHandler pTimerHandler) 
+					{
+						// TODO Auto-generated method stub
+						//MonkeyTutorial start 
+						MonkeyTutorial.monkeyTutorialstart(2,
+								GameActivity.moOutLineX - 28,
+								GameActivity.moOutLineY - 35,
+								GameActivity.moOutLineX + 202,
+								GameActivity.moOutLineY - 35,
+
+								GameActivity.moOutLineX+75, GameActivity.moOutLineY+25,
+								GameActivity.moOutLineX+43, GameActivity.moOutLineY+52, 
+								GameActivity.moOutLineX+38, GameActivity.moOutLineY+21,
+								GameActivity.moOutLineX+84, GameActivity.moOutLineY+1,
+								GameActivity.moOutLineX+117, GameActivity.moOutLineY+12,
+								GameActivity.moOutLineX+143, GameActivity.moOutLineY+43,
+								GameActivity.moOutLineX+137, GameActivity.moOutLineY+93,
+								GameActivity.moOutLineX+62, GameActivity.moOutLineY+112,
+								GameActivity.moOutLineX+18, GameActivity.moOutLineY+110, 
+								GameActivity.moOutLineX+83, GameActivity.moOutLineY+144, 
+								GameActivity.moOutLineX+144, GameActivity.moOutLineY+182, 
+								GameActivity.moOutLineX+190, GameActivity.moOutLineY+223, 
+								GameActivity.moOutLineX+190, GameActivity.moOutLineY+223, 
+								
+								//no need
+								GameActivity.moOutLineX+142, GameActivity.moOutLineY-48, 
+								GameActivity.moOutLineX+142, GameActivity.moOutLineY+208, 
+								GameActivity.moOutLineX+142, GameActivity.moOutLineY+208,
+								GameActivity.moOutLineX+142, GameActivity.moOutLineY+208,
+								
+								GameActivity.moOutLineX+142, GameActivity.moOutLineY-20,
+								GameActivity.moOutLineX+165, GameActivity.moOutLineY-20
+								); 
+						
+						// play sound
+						GameActivity.audioPlay = true;
+						NumberSprites.playAudio(R.raw.hw_ho);
+					}
+				}));
 				 	
-				LetterStructureHo.createNumberSpriteAndCursor(); 
+				//LetterStructureHo.createNumberSpriteAndCursor(); 
 		}
 		//Outline of letter Kho
 		else if(GameActivity.letter == 12)

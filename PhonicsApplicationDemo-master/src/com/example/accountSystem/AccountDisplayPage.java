@@ -3,6 +3,7 @@ package com.example.accountSystem;
 import java.io.File;
 import java.util.ArrayList;
 
+import com.example.phonicsapp.GameMainPage;
 import com.example.phonicsapp.R;
 
 import android.app.Activity;
@@ -24,7 +25,7 @@ public class AccountDisplayPage extends Activity
 	public ArrayList<Item> gridArray = new ArrayList<Item>();
 	public CustomGridViewAdapter customGridAdapter;
 	
-	public static int accountNumber=66;
+	public static int accountNumber;
 	public Bitmap[] accountPic = new Bitmap[10];
 	
 	public AccountDisplayPage instance;
@@ -102,10 +103,11 @@ public class AccountDisplayPage extends Activity
 	public void onClickSnapShotCheck(int position)
 	{
 		 File imgFile = new  File("/sdcard/PhonicsApp/AccountPic/"+position+".jpg");
+		 accountNumber = position;
+		 
+		//if account picture is not taken, then take picture
  		 if(!imgFile.exists())
  		 {
- 			 accountNumber = position;
- 			 
  			 counter++;
  			 if(counter==1)
  			 {
@@ -113,6 +115,13 @@ public class AccountDisplayPage extends Activity
  				 instance.startActivity(new Intent(instance.getBaseContext(), CameraPicture.class));
  			 } 
  	     }
+ 		 //if account picture is taken, then go to GameMainPage
+ 		 else
+ 		 {
+ 			 instance.finish();
+ 			 instance.startActivity(new Intent(instance.getBaseContext(), GameMainPage.class));
+ 		 }
+ 		 
  		 
 	}
 }

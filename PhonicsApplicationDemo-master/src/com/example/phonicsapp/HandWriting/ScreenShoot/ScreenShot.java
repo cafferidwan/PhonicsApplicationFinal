@@ -1,5 +1,7 @@
 package com.example.phonicsapp.HandWriting.ScreenShoot;
 
+import java.io.File;
+
 import org.andengine.engine.handler.timer.ITimerCallback;
 import org.andengine.engine.handler.timer.TimerHandler;
 import org.andengine.entity.util.ScreenCapture;
@@ -9,33 +11,55 @@ import org.andengine.opengl.texture.region.TextureRegion;
 import org.andengine.opengl.texture.region.TextureRegionFactory;
 import org.andengine.util.FileUtils;
 
+import com.example.accountSystem.AccountDisplayPage;
 import com.example.phonicsapp.HandWriting.banglaletterwriting.GameActivity;
 
 import android.graphics.BitmapFactory;
+import android.os.Environment;
 
 
 public class ScreenShot 
 {
-
+	
+	public static int screenAccountNumber;
+	
 	public ScreenShot()
 	{
+//		GameActivity.screenCapture.capture((int) (GameActivity.BackgroundWidth*0.3), (int)((GameActivity.BackgroundWidth/1.7)*1/7), 
+//				GameActivity.viewWidth, GameActivity.viewHeight,FileUtils.getAbsolutePathOnExternalStorage("/screen"+".jpg")
+//		 , new IScreenCaptureCallback() 
+		
+//		GameActivity.screenCapture.capture((int) (GameActivity.BackgroundWidth*0.3), (int)((GameActivity.BackgroundWidth/1.7)*1/7), GameActivity.viewWidth, GameActivity.viewHeight,FileUtils.getAbsolutePathOnInternalStorage
+//				(GameActivity.MainActivityInstace.getApplicationContext(), "/screen"+".jpg") , new IScreenCaptureCallback() 
+		
+		File file = new File(Environment.getExternalStorageDirectory(), "/PhonicsApp/HandWritingLetters");
+		if (!file.exists())  
+		{
+		    file.mkdirs();
+		}
+		screenAccountNumber = AccountDisplayPage.accountNumber;
+		
+		//capture the screen shot and save it to external storage
 		GameActivity.cursor.setVisible(false);
 		//final float time = System.currentTimeMillis();
-		GameActivity.screenCapture.capture((int) (GameActivity.BackgroundWidth*0.3), (int)((GameActivity.BackgroundWidth/1.7)*1/7), GameActivity.viewWidth, GameActivity.viewHeight,FileUtils.getAbsolutePathOnInternalStorage
-				(GameActivity.MainActivityInstace.getApplicationContext(), "/screen"+".jpg") , new IScreenCaptureCallback() 
+		GameActivity.screenCapture.capture((int) (GameActivity.BackgroundWidth*0.3), (int)((GameActivity.BackgroundWidth/1.7)*1/7), 
+		GameActivity.viewWidth, GameActivity.viewHeight,FileUtils.getAbsolutePathOnExternalStorage( "/PhonicsApp/HandWritingLetters/account no"+" "+screenAccountNumber+".jpg")
+		, new IScreenCaptureCallback() 
 		{ 
 			@Override
 			public void onScreenCaptured(final String pFilePath) 
 			{
 				GameActivity.MainActivityInstace.runOnUiThread(new Runnable()
-				{
+				{ 
 					@Override
 					public void run() 
-					{
+					{ 
 						//Debug.d("Screenshot: " + pFilePath + " taken!");
 //						GameActivity.changeTexture = 1;
-						new setTexture(FileUtils.getAbsolutePathOnInternalStorage
-								(GameActivity.MainActivityInstace.getApplicationContext(), "/screen"+".jpg"));
+						new setTexture(FileUtils.getAbsolutePathOnExternalStorage("/PhonicsApp/HandWritingLetters/account no"+" "+screenAccountNumber+".jpg"));
+						
+//						new setTexture(FileUtils.getAbsolutePathOnInternalStorage
+//								(GameActivity.MainActivityInstace.getApplicationContext(), "/screen"+".jpg"));
 					} 
 				});
 			}
