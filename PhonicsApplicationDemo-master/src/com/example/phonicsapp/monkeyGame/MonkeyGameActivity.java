@@ -12,26 +12,19 @@ import org.andengine.entity.scene.Scene;
 import org.andengine.entity.scene.background.Background;
 import org.andengine.entity.sprite.Sprite;
 import org.andengine.input.touch.TouchEvent;
-import org.andengine.opengl.texture.TextureOptions;
 import org.andengine.opengl.texture.atlas.bitmap.BitmapTextureAtlas;
-import org.andengine.opengl.texture.atlas.bitmap.BitmapTextureAtlasTextureRegionFactory;
 import org.andengine.opengl.texture.region.ITextureRegion;
 import org.andengine.opengl.texture.region.TextureRegion;
 import org.andengine.opengl.vbo.VertexBufferObjectManager;
 import org.andengine.ui.activity.SimpleBaseGameActivity;
 import org.andengine.util.color.Color;
-import StatusBarController.StatusBar;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.DialogInterface.OnClickListener;
+
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.view.Display;
 
 import com.example.phonicsapp.GameMainPage;
 import com.example.phonicsapp.MenuPage;
 import com.example.phonicsapp.R;
-import com.example.phonicsapp.boxGame.BoxGameActivity;
 
 
 public class MonkeyGameActivity  extends SimpleBaseGameActivity implements IOnAreaTouchListener
@@ -791,83 +784,83 @@ public class MonkeyGameActivity  extends SimpleBaseGameActivity implements IOnAr
 		MonkeyGameActivity.audioPlay = true;
 		if(monkeyGameMenuLetterSelector==1)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_mo);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_mo);
 		}
 		else if(monkeyGameMenuLetterSelector==2)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_bo);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_aa);
 		}
 		else if(monkeyGameMenuLetterSelector==3)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_ro);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_i);
 		}
 		else if(monkeyGameMenuLetterSelector==4)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_toh);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_raw);
 		}
 		else if(monkeyGameMenuLetterSelector==5)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_bo);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_ko);
 		}
 		else if(monkeyGameMenuLetterSelector==6)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_ro);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_bo);
 		}
 		else if(monkeyGameMenuLetterSelector==7)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_toh);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_talibasha);
 		}
 		else if(monkeyGameMenuLetterSelector==8)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_bo);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_lo);
 		}
 		else if(monkeyGameMenuLetterSelector==9)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_ro);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_po);
 		}
 		else if(monkeyGameMenuLetterSelector==10)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_toh);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_go);
 		}
 		else if(monkeyGameMenuLetterSelector==11)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_bo);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_ho);
 		}
 		else if(monkeyGameMenuLetterSelector==12)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_ro);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_kho);
 		}
 		else if(monkeyGameMenuLetterSelector==13)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_toh);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_cho);
 		}
 		else if(monkeyGameMenuLetterSelector==14)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_bo);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_no);
 		}
 		else if(monkeyGameMenuLetterSelector==15)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_ro);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_a);
 		}
 		else if(monkeyGameMenuLetterSelector==16)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_toh);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_do);
 		}
 		else if(monkeyGameMenuLetterSelector==17)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_bo);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_u);
 		}
 		else if(monkeyGameMenuLetterSelector==18)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_ro);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_to);
 		}
 		else if(monkeyGameMenuLetterSelector==19)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_toh);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_toh);
 		}
 		else if(monkeyGameMenuLetterSelector==20)
 		{
-			ObjectRemoveFunctions.playAudio(R.raw.monkey_bo);
+			ObjectRemoveFunctions.playAudio(R.raw.intro_doh);
 		}
 		
 	}

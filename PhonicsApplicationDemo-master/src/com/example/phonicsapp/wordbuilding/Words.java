@@ -219,7 +219,7 @@ public class Words {
 		secquence1.add("l"); 
 		secquence1.add("akar"); 
 		secquenceContainer.add(secquence1); 
-		wsContainer.add(new WordSecuenceSound(secquence1, R.raw.tobla,"tobla"));
+		wsContainer.add(new WordSecuenceSound(secquence1, R.raw.tobola,"tobla"));
 
 
 		//বাম : 

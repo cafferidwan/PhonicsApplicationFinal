@@ -879,7 +879,7 @@ public class LoadResources
 			MonkeyGameActivity.mFaceTextureRegionToh1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasToh1, MonkeyGameActivity.MonkeyGameActivityActivity, "tomtom.png", 0, 0);
 			MonkeyGameActivity.mFaceTextureRegionToh2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasToh2, MonkeyGameActivity.MonkeyGameActivityActivity, "tomato.png",0,0);
 			MonkeyGameActivity.mFaceTextureRegionToh3 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasToh3, MonkeyGameActivity.MonkeyGameActivityActivity, "tin.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionToh4 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasToh4, MonkeyGameActivity.MonkeyGameActivityActivity, "taka.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionToh4 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasToh4, MonkeyGameActivity.MonkeyGameActivityActivity, "table.png",0,0);
 			MonkeyGameActivity.mFaceTextureRegionToh5 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasToh5, MonkeyGameActivity.MonkeyGameActivityActivity, "tob.png",0,0);
 			MonkeyGameActivity.mFaceTextureRegionToh6 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasToh6, MonkeyGameActivity.MonkeyGameActivityActivity, "taka.png",0,0);
 			MonkeyGameActivity.mFaceTextureRegionWToh1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWToh1, MonkeyGameActivity.MonkeyGameActivityActivity, "dalim.png",0,0);
@@ -926,7 +926,7 @@ public class LoadResources
 			MonkeyGameActivity.mFaceTextureRegionDoh5 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasDoh5, MonkeyGameActivity.MonkeyGameActivityActivity, "dol.png",0,0);
 			MonkeyGameActivity.mFaceTextureRegionDoh6 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasDoh6, MonkeyGameActivity.MonkeyGameActivityActivity, "dosh.png",0,0);
 			MonkeyGameActivity.mFaceTextureRegionWDoh1 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWDoh1, MonkeyGameActivity.MonkeyGameActivityActivity, "ek.png",0,0);
-			MonkeyGameActivity.mFaceTextureRegionWDoh2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWDoh2, MonkeyGameActivity.MonkeyGameActivityActivity, "doi.png",0,0);
+			MonkeyGameActivity.mFaceTextureRegionWDoh2 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWDoh2, MonkeyGameActivity.MonkeyGameActivityActivity, "dala.png",0,0);
 			MonkeyGameActivity.mFaceTextureRegionWDoh3 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWDoh3, MonkeyGameActivity.MonkeyGameActivityActivity, "ektara.png",0,0);
 			MonkeyGameActivity.mFaceTextureRegionWDoh4 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWDoh4, MonkeyGameActivity.MonkeyGameActivityActivity, "rana.png",0,0);
 			MonkeyGameActivity.mFaceTextureRegionWDoh5 = BitmapTextureAtlasTextureRegionFactory.createFromAsset(MonkeyGameActivity.mBitmapTextureAtlasWDoh5, MonkeyGameActivity.MonkeyGameActivityActivity, "elach.png",0,0);
